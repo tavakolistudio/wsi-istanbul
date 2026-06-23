@@ -1,5 +1,11 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { locales, defaultLocale } from "@/content/types";
+
+// Kept in sync with content/types.ts manually. Middleware runs on the Edge
+// Runtime, which Vercel's bundler can refuse to deploy if it pulls in
+// shared app modules (seen with "@/content/types" here) — so this file is
+// deliberately self-contained with zero "@/..." imports.
+const locales = ["en", "fa", "tr"] as const;
+const defaultLocale = "en";
 
 /**
  * Every route lives under /{locale}. Unprefixed paths redirect to the
