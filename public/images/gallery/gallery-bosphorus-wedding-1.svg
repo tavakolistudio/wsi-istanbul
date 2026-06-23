@@ -1,0 +1,19 @@
+<svg width="1200" height="1500" viewBox="0 0 1200 1500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder image">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#C9A668" /><stop offset="100%" stop-color="#EDE0C8" /></linearGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#bg)" />
+  <g opacity="0.16" fill="#211E1B">
+    <rect x="0" y="1290" width="1200" height="210.00000000000003" />
+    <rect x="96" y="960" width="30" height="330" />
+    <circle cx="204.00000000000003" cy="930" r="54" />
+    <rect x="168.00000000000003" y="1020.0000000000001" width="90" height="270" />
+    <rect x="480" y="1080" width="14.4" height="210.00000000000003" />
+    <rect x="672.0000000000001" y="1080" width="14.4" height="210.00000000000003" />
+    <path d="M 480 1140 Q 576 1050 672.0000000000001 1140" stroke="#211E1B" stroke-width="4.8" fill="none" />
+    <rect x="936" y="990" width="24" height="300" />
+    <circle cx="1008" cy="960" r="42.00000000000001" />
+  </g>
+  <rect x="54" y="1350" width="525" height="75" rx="37.5" fill="#211E1B" opacity="0.6" />
+  <text x="75.6" y="1401" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="36" fill="#FAF7F2">Replace: gallery-bosphorus-wedding-1.jpg</text>
+</svg>

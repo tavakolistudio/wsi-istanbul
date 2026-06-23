@@ -1,0 +1,19 @@
+<svg width="1000" height="1250" viewBox="0 0 1000 1250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder image">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#6B6258" /><stop offset="100%" stop-color="#E7E1D5" /></linearGradient>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#bg)" />
+  <g opacity="0.14" fill="#211E1B">
+    <rect x="0" y="1075" width="1000" height="175.00000000000003" />
+    <rect x="80" y="800" width="25" height="275" />
+    <circle cx="170" cy="775" r="45" />
+    <rect x="140" y="850.0000000000001" width="75" height="225" />
+    <rect x="400" y="900" width="12" height="175.00000000000003" />
+    <rect x="560" y="900" width="12" height="175.00000000000003" />
+    <path d="M 400 950 Q 480 875 560 950" stroke="#211E1B" stroke-width="4" fill="none" />
+    <rect x="780" y="825" width="20" height="250" />
+    <circle cx="840" cy="800" r="35" />
+  </g>
+  <rect x="45" y="1125" width="387.5" height="62.5" rx="31.25" fill="#211E1B" opacity="0.6" />
+  <text x="63" y="1167.5" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="30" fill="#FAF7F2">Replace: about-mohammad-tavakoli.jpg</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder image">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#11151C" /><stop offset="100%" stop-color="#9C7C44" /></linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)" />
+  <g opacity="0.24" fill="#211E1B">
+    <rect x="0" y="774" width="1200" height="126.00000000000001" />
+    <rect x="96" y="576" width="30" height="198" />
+    <circle cx="204.00000000000003" cy="558" r="54" />
+    <rect x="168.00000000000003" y="612" width="90" height="162" />
+    <rect x="480" y="648" width="14.4" height="126.00000000000001" />
+    <rect x="672.0000000000001" y="648" width="14.4" height="126.00000000000001" />
+    <path d="M 480 684 Q 576 630 672.0000000000001 684" stroke="#211E1B" stroke-width="4.8" fill="none" />
+    <rect x="936" y="594" width="24" height="180" />
+    <circle cx="1008" cy="576" r="42.00000000000001" />
+  </g>
+  <rect x="54" y="810" width="450" height="45" rx="22.5" fill="#211E1B" opacity="0.6" />
+  <text x="75.6" y="840.6" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="21.6" fill="#FAF7F2">Replace: location-rooftop-yacht.jpg</text>
+</svg>

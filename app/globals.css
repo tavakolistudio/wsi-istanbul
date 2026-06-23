@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+/*
+ * Brand theme tokens (Tailwind v4 CSS-first config).
+ * Palette: warm ivory background, soft charcoal text, muted champagne-gold
+ * accent, subtle warm-gray UI tones. No bright/saturated colors.
+ */
+:root {
+  --color-ivory: #faf7f2;
+  --color-ivory-soft: #f3eee5;
+  --color-charcoal: #211e1b;
+  --color-charcoal-soft: #4a443d;
+  --color-muted: #6f675c;
+  --color-border: #e4ddd1;
+  --color-gold: #bc9a5e;
+  --color-gold-strong: #9c7c44;
+  --color-gold-soft: #f1e7d2;
+
+  /* Locale-aware type roles: swapped per-locale in [data-locale] below. */
+  --font-heading: var(--font-heading-latin);
+  --font-body: var(--font-body-latin);
+}
+
+[data-locale="fa"] {
+  --font-heading: var(--font-fa);
+  --font-body: var(--font-fa);
+}
+
+@theme inline {
+  --color-ivory: var(--color-ivory);
+  --color-ivory-soft: var(--color-ivory-soft);
+  --color-charcoal: var(--color-charcoal);
+  --color-charcoal-soft: var(--color-charcoal-soft);
+  --color-muted: var(--color-muted);
+  --color-border: var(--color-border);
+  --color-gold: var(--color-gold);
+  --color-gold-strong: var(--color-gold-strong);
+  --color-gold-soft: var(--color-gold-soft);
+
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-charcoal);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--color-gold-soft);
+  color: var(--color-charcoal);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+/* Subtle scroll-reveal used by components/ui/FadeIn.tsx */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
