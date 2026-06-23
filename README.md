@@ -27,7 +27,7 @@ public/images/ Placeholder photography (see "Replacing images" below)
 scripts/      generate-placeholder-images.mjs — regenerates the placeholder SVGs
 ```
 
-Routing is custom (no i18n library): `middleware.ts` redirects unprefixed paths to `/en`, and `app/[locale]/layout.tsx` validates the locale, sets `<html lang dir>`, and renders Persian as RTL automatically. Components use Tailwind's logical-property utilities (`ps-`, `pe-`, `text-start`, `start-`/`end-`, `rtl:`) instead of `left`/`right`, so RTL layout flips for free — no per-component RTL branching.
+Routing is custom (no i18n library): every real page lives under `app/[locale]/...`, and `app/[locale]/layout.tsx` validates the locale, sets `<html lang dir>`, and renders Persian as RTL automatically. Unprefixed paths (e.g. a visit to bare `/` or `/about`) are handled by small redirect pages at the true root (`app/page.tsx`, `app/about/page.tsx`, etc.) that send visitors to the matching `/en/...` route — deliberately *not* middleware, since Next.js middleware runs on the Edge Runtime, and `next/server`'s bundled `ua-parser-js` dependency throws `ReferenceError: __dirname is not defined` there on Vercel (a long-standing, unresolved upstream bug — see [vercel/next.js#53968](https://github.com/vercel/next.js/issues/53968)). If you add a new top-level page later, add a matching one-line redirect page for it alongside the others. Components use Tailwind's logical-property utilities (`ps-`, `pe-`, `text-start`, `start-`/`end-`, `rtl:`) instead of `left`/`right`, so RTL layout flips for free — no per-component RTL branching.
 
 ## Where to edit text
 
