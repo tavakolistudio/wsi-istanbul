@@ -4,12 +4,12 @@ import { getWhatsAppLink } from "@/lib/whatsapp";
 
 export function FixedBottomNav({ locale }: { locale: Locale }) {
   return (
-    <div className="fixed inset-x-0 bottom-5 z-40 flex justify-center px-4">
+    <div className="pointer-events-none fixed inset-x-0 bottom-5 z-40 flex justify-center px-4">
       <a
         href={getWhatsAppLink()}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center gap-2.5 rounded-full bg-ivory py-2.5 ps-4 pe-2.5 shadow-[0_0_0_0.5px_rgba(0,0,0,0.05),0_4px_30px_rgba(0,0,0,0.08)] transition-transform duration-300 hover:scale-[1.03]"
+        className="pointer-events-auto flex items-center gap-2.5 rounded-full bg-ivory py-2.5 ps-4 pe-2.5 shadow-[0_0_0_0.5px_rgba(0,0,0,0.05),0_4px_30px_rgba(0,0,0,0.08)] transition-transform duration-300 hover:scale-[1.03]"
       >
         <HeartIcon className="h-4 w-4 text-gold-strong" />
         <span className="rounded-full bg-charcoal px-4 py-1.5 text-sm font-medium tracking-wide text-ivory">
