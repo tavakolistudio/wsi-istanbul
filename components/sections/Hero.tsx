@@ -167,6 +167,52 @@ export function Hero({ locale }: { locale: Locale }) {
     return () => node.removeEventListener("mousemove", handleMove);
   }, [mouseX, reducedMotion]);
 
+  // Briefly hold the scroll once the arc + headline finish settling (in either
+  // direction), so there's a moment to actually read the text before the page
+  // continues into the rest of the one-pager. Listens on `window` (not the
+  // hero node) so the hold still fires when scrolling back up into the hero
+  // from a later section. Doesn't touch touch/trackpad swipes — wheel only.
+  useEffect(() => {
+    if (reducedMotion) return;
+
+    let locked = false;
+    let wasSettled = false;
+    let releaseTimeout: ReturnType<typeof setTimeout> | null = null;
+
+    function isInSettledBand() {
+      const node = sectionRef.current;
+      if (!node) return false;
+      const pinnedRange = Math.max(node.offsetHeight - window.innerHeight, 0);
+      if (pinnedRange <= 0) return false;
+      const lowerBound = pinnedRange * 0.85;
+      return window.scrollY >= lowerBound && window.scrollY <= pinnedRange + 4;
+    }
+
+    function handleWheel(e: WheelEvent) {
+      if (locked) {
+        e.preventDefault();
+        return;
+      }
+
+      const settledNow = isInSettledBand();
+      if (settledNow && !wasSettled) {
+        locked = true;
+        e.preventDefault();
+        releaseTimeout = setTimeout(() => {
+          locked = false;
+        }, 600);
+        return;
+      }
+      wasSettled = settledNow;
+    }
+
+    window.addEventListener("wheel", handleWheel, { passive: false });
+    return () => {
+      window.removeEventListener("wheel", handleWheel);
+      if (releaseTimeout) clearTimeout(releaseTimeout);
+    };
+  }, [reducedMotion]);
+
   const scatterPositions = useMemo(
     () =>
       images.map((_, i) => ({
@@ -223,13 +269,18 @@ export function Hero({ locale }: { locale: Locale }) {
 
       if (stage <= 1) return lerpTarget(scatter, line, clamp01(stage));
       if (stage <= 2) return lerpTarget(line, circle, clamp01(stage - 1));
-      if (stage <= 3) return circle;
-      return lerpTarget(circle, arc, clamp01(stage - 3));
+      if (stage <= 2.6) return circle;
+      if (stage <= 3.4) return lerpTarget(circle, arc, clamp01((stage - 2.6) / 0.8));
+      return arc;
     });
   }, [images, total, stage, size, rtl, parallax, scatterPositions]);
 
-  const hintOpacity = mapRange(stage, 2.0, 2.3) * (1 - mapRange(stage, 2.6, 2.9));
-  const contentT = mapRange(stage, 3.0, 3.6);
+  // The arc + headline finish settling by stage 3.4 (progress 0.85), leaving
+  // stage 3.4-4 (the last 15% of scroll through the hero) as a held "fully
+  // readable" moment — see the wheel-lock effect below, which pauses scroll
+  // for a beat right as this zone is entered, in either scroll direction.
+  const hintOpacity = mapRange(stage, 2.0, 2.2) * (1 - mapRange(stage, 2.3, 2.6));
+  const contentT = mapRange(stage, 2.8, 3.4);
 
   return (
     <section ref={sectionRef} className="relative bg-ivory" style={{ height: reducedMotion ? "100vh" : "280vh" }}>
