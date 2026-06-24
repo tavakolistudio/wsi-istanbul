@@ -250,10 +250,24 @@ export function Hero({ locale }: { locale: Locale }) {
         opacity: 1,
       };
 
-      const arcRadius = Math.min(w, h * 1.5) * (isMobile ? 1.3 : 1.05);
-      const arcApexY = h * (isMobile ? 0.34 : 0.24);
-      const arcCenterY = arcApexY + arcRadius;
+      // Keep the whole arc — not just its topmost point — inside the
+      // viewport, below the fixed text block. The old radius formula only
+      // bounded the apex; the two outer cards (which dip lower, per the
+      // sine curve) could land far below the fold or under the text.
       const spreadAngle = isMobile ? 110 : 140;
+      const halfSpreadRad = (spreadAngle / 2) * (Math.PI / 180);
+      const verticalDrop = 1 - Math.cos(halfSpreadRad); // outer cards' drop below the apex, as a multiple of radius
+      const horizontalSpan = 2 * Math.sin(halfSpreadRad); // full arc width, as a multiple of radius
+
+      const cardScale = isMobile ? 1.3 : 1.7;
+      const halfCardW = (CARD_WIDTH * cardScale) / 2;
+      const halfCardH = (CARD_HEIGHT * cardScale) / 2;
+
+      const arcApexY = h * (isMobile ? 0.48 : 0.52); // clears the text block above it
+      const maxRadiusForHeight = (h * 0.97 - halfCardH - arcApexY) / verticalDrop;
+      const maxRadiusForWidth = (w * 0.47 - halfCardW) / (horizontalSpan / 2);
+      const arcRadius = Math.max(60, Math.min(maxRadiusForHeight, maxRadiusForWidth));
+      const arcCenterY = arcApexY + arcRadius;
       const startAngle = -90 - spreadAngle / 2;
       const step = total > 1 ? spreadAngle / (total - 1) : 0;
       const idx = rtl ? total - 1 - i : i;
@@ -263,7 +277,7 @@ export function Hero({ locale }: { locale: Locale }) {
         x: Math.cos(arcRad) * arcRadius + parallax,
         y: Math.sin(arcRad) * arcRadius + arcCenterY,
         rotation: arcAngle + 90,
-        scale: isMobile ? 1.3 : 1.7,
+        scale: cardScale,
         opacity: 1,
       };
 
