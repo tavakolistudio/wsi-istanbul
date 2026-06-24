@@ -17,11 +17,6 @@ const IVORY = "#FAF7F2";
 
 /** [folder, filename, width, height, caption, gradientStops[], skylineOpacity] */
 const IMAGES = [
-  // Hero slideshow (wide, cinematic)
-  ["hero", "hero-istanbul-wedding-1.svg", 2400, 1350, "hero-istanbul-wedding-1.jpg", ["#2A251F", "#C9A668"], 0.22],
-  ["hero", "hero-istanbul-wedding-2.svg", 2400, 1350, "hero-istanbul-wedding-2.jpg", ["#9C7C44", "#EDE0C8"], 0.18],
-  ["hero", "hero-istanbul-wedding-3.svg", 2400, 1350, "hero-istanbul-wedding-3.jpg", ["#6B6258", "#8C6E5C"], 0.2],
-
   // Gallery (10 — portrait ratio for the grid)
   ["gallery", "gallery-bosphorus-wedding-1.svg", 1200, 1500, "gallery-bosphorus-wedding-1.jpg", ["#C9A668", "#EDE0C8"], 0.16],
   ["gallery", "gallery-ortakoy-wedding-1.svg", 1200, 1500, "gallery-ortakoy-wedding-1.jpg", ["#9C7C44", "#E7E1D5"], 0.16],
@@ -46,7 +41,7 @@ const IMAGES = [
 
   // About portraits
   ["about", "about-mohammad-tavakoli.svg", 1000, 1250, "about-mohammad-tavakoli.jpg", ["#6B6258", "#E7E1D5"], 0.14],
-  ["about", "about-mahtab-bahrian.svg", 1000, 1250, "about-mahtab-bahrian.jpg", ["#B8AD98", "#EDE0C8"], 0.14],
+  ["about", "about-mahtab-behrayan.svg", 1000, 1250, "about-mahtab-behrayan.jpg", ["#B8AD98", "#EDE0C8"], 0.14],
 ];
 
 function skylineMotif(width, height, opacity) {

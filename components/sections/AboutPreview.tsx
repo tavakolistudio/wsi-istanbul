@@ -15,7 +15,7 @@ export function AboutPreview({ locale }: { locale: Locale }) {
         <FadeIn className="grid grid-cols-2 gap-4">
           {founders.map((founder) => (
             <div key={founder.id} className="relative aspect-[4/5] overflow-hidden rounded-sm">
-              <CinematicImage src={founder.image} alt={founder.name} sizes="25vw" />
+              <CinematicImage src={founder.image} alt={founder.name[locale]} sizes="25vw" />
             </div>
           ))}
         </FadeIn>

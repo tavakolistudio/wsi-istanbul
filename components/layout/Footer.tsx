@@ -1,26 +1,27 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/content/types";
-import { footerExtraLinks, primaryNav } from "@/content/navigation";
+import { primaryNav } from "@/content/navigation";
 import { brand, contact, footer as footerContent } from "@/content/site";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { Container } from "@/components/ui/Container";
 
+/** Curated footer link set: Services, Gallery, About, Contact — in that order. */
+const footerPaths = ["/services", "/gallery", "/about", "/contact"];
+
 export function Footer({ locale }: { locale: Locale }) {
   const year = new Date().getFullYear();
-  const links = [...primaryNav, ...footerExtraLinks];
+  const links = footerPaths
+    .map((path) => primaryNav.find((item) => item.path === path))
+    .filter((item): item is NonNullable<typeof item> => item !== undefined);
 
   return (
     <footer className="border-t border-border bg-ivory-soft">
       <Container className="grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-4">
         <div className="lg:col-span-2">
-          <Image
-            src={brand.logo}
-            alt={brand.name}
-            width={985}
-            height={521}
-            className="h-12 w-auto rounded-md shadow-sm ring-1 ring-border"
-          />
+          <div className="relative aspect-[9/5] w-40">
+            <Image src={brand.logo} alt={brand.name} fill sizes="160px" className="object-contain" />
+          </div>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted">{footerContent.description[locale]}</p>
           <p className="mt-2 text-xs uppercase tracking-[0.2em] text-muted">{brand.parentBrand}</p>
         </div>
@@ -75,8 +76,10 @@ export function Footer({ locale }: { locale: Locale }) {
 
       <div className="border-t border-border">
         <Container className="flex flex-col items-center justify-between gap-2 py-6 text-xs text-muted sm:flex-row">
-          <p>
-            © {year} {footerContent.copyright[locale]}
+          <p className="text-center sm:text-start">
+            © {year} {footerContent.copyrightBrand}
+            <br />
+            {footerContent.copyrightLocation}
           </p>
           <a
             href={footerContent.poweredBy.url}

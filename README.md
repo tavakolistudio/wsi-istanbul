@@ -1,6 +1,6 @@
-# Wedding Stories Istanbul
+# ISO Wedding
 
-Premium wedding photography & film marketing site, by Tavakoli Studio. Next.js 15 (App Router), TypeScript, Tailwind CSS v4. Trilingual: English (default), Persian (RTL), Turkish.
+Premium wedding photography & film marketing site, by Tavakoli Studio. Next.js 15 (App Router), TypeScript, Tailwind CSS v4. Trilingual: Persian (default, RTL), English, Turkish.
 
 ## Getting started
 
@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) — it redirects to `/en`. Try `/fa` and `/tr` for the other languages.
+Open [http://localhost:3000](http://localhost:3000) — it redirects to `/fa`. Try `/en` and `/tr` for the other languages.
 
 ```bash
 npm run build   # production build, also type-checks + lints
@@ -51,7 +51,7 @@ Every image right now is a **generated placeholder SVG** — a brand-colored gra
 
 **To replace one:** drop your real photo into the matching folder under `public/images/` using the filename shown in the placeholder's caption (e.g. `gallery-bosphorus-wedding-1.jpg`), then update that one path string in the relevant `content/*.ts` file (e.g. change `"/images/gallery/gallery-bosphorus-wedding-1.svg"` to `"/images/gallery/gallery-bosphorus-wedding-1.jpg"`). That's it — no component changes needed, `next/image` handles the rest (optimization, lazy-loading, responsive sizes).
 
-Folders: `public/images/hero/` (3 slideshow images), `public/images/gallery/` (10), `public/images/locations/` (8), `public/images/about/` (2 founder portraits). The brand logo is `public/logo.png` and the favicon mark is `app/icon.png` — both already real assets, not placeholders.
+Folders: `public/images/hero/` (1 hero background photo), `public/images/gallery/` (10), `public/images/locations/` (8), `public/images/about/` (2 founder portraits). The brand logo is `public/images/logo-mark.png` and the favicon mark is `app/icon.png` — both already real assets, not placeholders.
 
 If you add a brand-new gallery/location entry before you have a real photo for it, run `node scripts/generate-placeholder-images.mjs` after adding a matching entry to the `IMAGES` array at the top of that script, and it'll generate a new on-brand placeholder for you.
 
@@ -80,7 +80,7 @@ It'll automatically appear in the Gallery page's grid and filters. The Home page
 
 - **Per-page title/description**: `content/site.ts` → `pages.<page>.seo.title` / `.description` (per locale). Each page's `generateMetadata` reads from here via `lib/metadata.ts`.
 - **Canonical/hreflang/Open Graph/Twitter tags**: generated automatically by `lib/metadata.ts` — no manual work needed when you change `siteUrl` or page copy.
-- **Site URL**: set the `NEXT_PUBLIC_SITE_URL` environment variable (see `.env.example`) once you have a real domain — it currently falls back to `https://wsi-istanbul.vercel.app`. This feeds the sitemap, robots.txt, canonical URLs, and JSON-LD.
+- **Site URL**: set the `NEXT_PUBLIC_SITE_URL` environment variable (see `.env.example`) once you have a real domain — it currently falls back to `https://iso-wedding.vercel.app`. This feeds the sitemap, robots.txt, canonical URLs, and JSON-LD.
 - **Structured data** (Organization + LocalBusiness/ProfessionalService): `lib/structured-data.ts`, sourced from `content/site.ts` (brand, contact, founders).
 - **Sitemap/robots**: `app/sitemap.ts` and `app/robots.ts` — update the `routes` array in `sitemap.ts` if you add a new top-level page.
 

@@ -4,16 +4,21 @@
  * updating text anywhere on the site — see README.md for the full guide.
  */
 
-export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://wsi-istanbul.vercel.app";
+export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://iso-wedding.vercel.app";
 
 export const brand = {
-  name: "Wedding Stories Istanbul",
+  name: "ISO Wedding",
   parentBrand: "Tavakoli Studio",
-  logo: "/logo.png",
+  tagline: {
+    en: "Cinematic Wedding Photography & Films in Istanbul",
+    fa: "عکاسی و فیلم‌برداری سینمایی عروسی در استانبول",
+    tr: "İstanbul'da Sinematik Düğün Fotoğrafçılığı & Filmleri",
+  },
+  logo: "/images/logo-mark.png",
 };
 
 export const contact = {
-  whatsappDisplay: "+90 501 696 77 77",
+  whatsappDisplay: "+90 501 696 7777",
   /** Digits-only, used to build wa.me links. */
   whatsappDigits: "905016967777",
   instagramHandle: "@tavakolistudio",
@@ -24,22 +29,22 @@ export const contact = {
 export const founders = [
   {
     id: "mohammad",
-    name: "Mohammad Tavakoli",
+    name: { en: "Mohammad Tavakoli", fa: "Mohammad Tavakoli", tr: "Mohammad Tavakoli" },
     role: {
       en: "Photographer & Filmmaker",
       fa: "عکاس و فیلم‌ساز",
       tr: "Fotoğrafçı & Film Yapımcısı",
     },
     bio: {
-      en: "Mohammad is an Iranian photographer and filmmaker with more than 20 years of experience across photography, filmmaking and visual storytelling. Over two decades, his work has moved from journalistic image-making to the intimate, cinematic visual language that now defines Wedding Stories Istanbul. He approaches every wedding the way he would a film set — reading light, anticipating moments, and staying close enough to capture what's real without ever getting in the way of it.",
-      fa: "محمد عکاس و فیلم‌ساز ایرانی با بیش از ۲۰ سال تجربه در عکاسی، فیلم‌سازی و روایت‌گری بصری است. در طول دو دهه، کار او از عکاسی خبری به سوی زبان بصری صمیمی و سینمایی‌ای حرکت کرده که امروز هویت Wedding Stories Istanbul را شکل می‌دهد. او به هر عروسی همان‌گونه نزدیک می‌شود که به یک پلاتوی فیلم‌برداری — نور را می‌خوانَد، لحظات را پیش‌بینی می‌کند و آن‌قدر نزدیک می‌ماند که واقعیت را ثبت کند، بدون آنکه هرگز مانع آن شود.",
-      tr: "Mohammad, fotoğrafçılık, film yapımcılığı ve görsel hikaye anlatıcılığında 20 yılı aşkın deneyime sahip İranlı bir fotoğrafçı ve film yapımcısıdır. İki on yıl boyunca çalışmaları, gazetecilik tarzı görüntü üretiminden, bugün Wedding Stories Istanbul'u tanımlayan samimi ve sinematik görsel dile doğru evrildi. Her düğüne bir film setine yaklaştığı gibi yaklaşır — ışığı okur, anları önceden sezer ve gerçek olanı yakalayacak kadar yakın durup asla önüne geçmez.",
+      en: "Mohammad is an Iranian photographer and filmmaker with more than 20 years of experience across photography, filmmaking and visual storytelling. Over two decades, his work has moved from journalistic image-making to the intimate, cinematic visual language that now defines ISO Wedding. He approaches every wedding the way he would a film set — reading light, anticipating moments, and staying close enough to capture what's real without ever getting in the way of it.",
+      fa: "محمد عکاس و فیلم‌ساز ایرانی با بیش از ۲۰ سال تجربه در عکاسی، فیلم‌سازی و روایت‌گری بصری است. در طول دو دهه، کار او از عکاسی خبری به سوی زبان بصری صمیمی و سینمایی‌ای حرکت کرده که امروز هویت ISO Wedding را شکل می‌دهد. او به هر عروسی همان‌گونه نزدیک می‌شود که به یک پلاتوی فیلم‌برداری — نور را می‌خوانَد، لحظات را پیش‌بینی می‌کند و آن‌قدر نزدیک می‌ماند که واقعیت را ثبت کند، بدون آنکه هرگز مانع آن شود.",
+      tr: "Mohammad, fotoğrafçılık, film yapımcılığı ve görsel hikaye anlatıcılığında 20 yılı aşkın deneyime sahip İranlı bir fotoğrafçı ve film yapımcısıdır. İki on yıl boyunca çalışmaları, gazetecilik tarzı görüntü üretiminden, bugün ISO Wedding'i tanımlayan samimi ve sinematik görsel dile doğru evrildi. Her düğüne bir film setine yaklaştığı gibi yaklaşır — ışığı okur, anları önceden sezer ve gerçek olanı yakalayacak kadar yakın durup asla önüne geçmez.",
     },
     image: "/images/about/about-mohammad-tavakoli.svg",
   },
   {
     id: "mahtab",
-    name: "Mahtab Bahrian",
+    name: { en: "Mahtab Behrayan", fa: "مهتاب بهریان", tr: "Mahtab Behrayan" },
     role: {
       en: "Creative Director & Writer",
       fa: "مدیر خلاق و نویسنده",
@@ -50,7 +55,7 @@ export const founders = [
       fa: "مهتاب مدیر خلاق، نویسنده و استراتژیست ایده با چشم‌اندازی روایی و هنری قوی است. او داستان پشت هر جلسه عکاسی را مدت‌ها پیش از ثبت اولین قاب شکل می‌دهد — از فضا و ریتم یک فیلم عروسی تا کلماتی که همراه آن می‌آیند. پیشینه او در نویسندگی و ایده‌پردازی، لایه‌ای از معنا به کار استودیو می‌افزاید که فراتر از تصویر است و هر پروژه را به چیزی نزدیک‌تر به یک داستان کوتاه تبدیل می‌کند تا یک ست عکاسی.",
       tr: "Mahtab, güçlü bir anlatı ve sanatsal vizyona sahip bir yaratıcı direktör, yazar ve fikir stratejistidir. Her çekimin ardındaki hikayeyi, ilk kare çekilmeden çok önce şekillendirir — bir düğün filminin atmosferinden ve temposundan, ona eşlik eden kelimelere kadar. Yazarlık ve fikir geliştirme geçmişi, stüdyonun çalışmalarına görselin ötesinde bir anlam katmanı ekler ve her projeyi bir fotoğraf setinden çok kısa bir hikayeye yaklaştırır.",
     },
-    image: "/images/about/about-mahtab-bahrian.svg",
+    image: "/images/about/about-mahtab-behrayan.svg",
   },
 ];
 
@@ -62,6 +67,14 @@ export const ui = {
     fa: "بررسی زمان‌های خالی در واتساپ",
     tr: "WhatsApp'tan Uygunluk Sorun",
   },
+  /** Short form for tight spaces — the header CTA pill and mobile nav drawer. */
+  checkAvailabilityShort: {
+    en: "Check Availability",
+    fa: "بررسی زمان‌های خالی",
+    tr: "Uygunluk Sor",
+  },
+  /** Shared between the hero primary CTA and the fixed bottom nav pill. */
+  startChat: { en: "Start a chat", fa: "شروع گفتگو", tr: "Sohbet Başlat" },
   sendMessage: { en: "Send a Message", fa: "ارسال پیام", tr: "Mesaj Gönderin" },
   learnMore: { en: "Learn More", fa: "بیشتر بدانید", tr: "Daha Fazla Bilgi" },
   readMore: { en: "Read More", fa: "ادامه مطلب", tr: "Devamını Oku" },
@@ -74,38 +87,247 @@ export const pages = {
   home: {
     seo: {
       title: {
-        en: "Wedding Photographer & Videographer in Istanbul | Wedding Stories Istanbul",
-        fa: "عکاس و فیلم‌بردار عروسی در استانبول | Wedding Stories Istanbul",
-        tr: "İstanbul'da Düğün Fotoğrafçısı & Videografı | Wedding Stories Istanbul",
+        en: "ISO Wedding | Wedding Photographer & Videographer in Istanbul",
+        fa: "ISO Wedding | عکاس و فیلم‌بردار عروسی در استانبول",
+        tr: "ISO Wedding | İstanbul'da Düğün Fotoğrafçısı & Videografı",
       },
       description: {
-        en: "Premium wedding photography, wedding films, pre-wedding and couple shoots in Istanbul. Cinematic storytelling by Wedding Stories Istanbul.",
-        fa: "عکاسی، فیلم‌برداری عروسی، عکاسی پره‌وداد و جلسات کاپل پریمیوم در استانبول. روایت‌گری سینمایی توسط Wedding Stories Istanbul.",
-        tr: "İstanbul'da premium düğün fotoğrafçılığı, düğün filmleri, pre-wedding ve çift çekimleri. Wedding Stories Istanbul'dan sinematik hikaye anlatımı.",
+        en: "Premium wedding photography, wedding films, pre-wedding and couple shoots in Istanbul. Cinematic storytelling by ISO Wedding, a Tavakoli Studio brand.",
+        fa: "عکاسی، فیلم‌برداری عروسی، عکاسی پره‌وداد و جلسات کاپل پریمیوم در استانبول. روایت‌گری سینمایی توسط ISO Wedding، برندی از Tavakoli Studio.",
+        tr: "İstanbul'da premium düğün fotoğrafçılığı, düğün filmleri, pre-wedding ve çift çekimleri. ISO Wedding'den sinematik hikaye anlatımı, bir Tavakoli Studio markası.",
       },
+      keywords: [
+        "Istanbul wedding photographer",
+        "Istanbul wedding videographer",
+        "pre wedding photoshoot Istanbul",
+        "couple photoshoot Istanbul",
+        "wedding photography Istanbul",
+        "Iranian wedding photographer Istanbul",
+      ],
     },
     hero: {
       eyebrow: {
-        en: "Istanbul Wedding Photography & Film",
+        en: "Wedding Photography & Films in Istanbul",
         fa: "عکاسی و فیلم‌برداری عروسی در استانبول",
-        tr: "İstanbul'da Düğün Fotoğrafçılığı & Filmi",
+        tr: "İstanbul'da Düğün Fotoğrafı ve Film Çekimi",
       },
       headline: {
-        en: "Your Wedding Story, Framed in Istanbul",
-        fa: "داستان عروسی شما، در قاب استانبول",
-        tr: "Düğün Hikayeniz, İstanbul'da Kareleniyor",
+        line1: { en: "Your wedding story,", fa: "داستان عروسی شما،", tr: "Düğün hikâyeniz," },
+        line2: { en: "framed in Istanbul.", fa: "در قاب استانبول.", tr: "İstanbul'un ışığında." },
+        /** Substring of line1/line2 (respectively) rendered in the serif accent style. */
+        accent1: { en: "wedding story", fa: "داستان عروسی", tr: "Düğün hikâyeniz" },
+        accent2: { en: "Istanbul", fa: "استانبول", tr: "İstanbul" },
       },
-      subtitle: {
-        en: "Cinematic wedding photography and films for couples who want timeless memories in one of the world's most beautiful cities.",
-        fa: "عکاسی و فیلم‌برداری سینمایی عروسی برای زوج‌هایی که می‌خواهند خاطره‌ای ماندگار از یکی از زیباترین شهرهای جهان داشته باشند.",
-        tr: "Dünyanın en güzel şehirlerinden birinde zamansız anılar isteyen çiftler için sinematik düğün fotoğrafçılığı ve filmleri.",
+      description: {
+        en: "ISO Wedding creates cinematic wedding photography, wedding films, pre-wedding and couple sessions for couples who want elegant, emotional and timeless memories in Istanbul.",
+        fa: "ISO Wedding برای زوج‌هایی ساخته شده که می‌خواهند عکس و فیلم عروسی، فرمالیته و کاپل‌شوت آن‌ها در استانبول شیک، احساسی، سینمایی و ماندگار باشد.",
+        tr: "ISO Wedding, İstanbul'da zarif, duygusal ve sinematik düğün fotoğrafları, düğün filmleri, dış çekim ve çift çekimleri üretir.",
       },
-      ctaPrimary: { en: "View Gallery", fa: "مشاهده گالری", tr: "Galeriyi Görüntüle" },
-      ctaSecondary: {
-        en: "Check Availability on WhatsApp",
-        fa: "بررسی زمان‌های خالی در واتساپ",
-        tr: "WhatsApp'tan Uygunluk Sorun",
+      secondParagraph: {
+        en: "Led by Mohammad Tavakoli and Mahtab Behrayan, the studio blends over two decades of visual experience with a narrative, director-led approach.",
+        fa: "این برند با نگاه تصویری محمد توکلی و ایده‌پردازی و کارگردانی مهتاب بهریان، فقط عکس نمی‌سازد؛ یک روایت تصویری از خاطره شما می‌سازد.",
+        tr: "Mohammad Tavakoli'nin görsel deneyimi ve Mahtab Behrayan'ın yaratıcı yönetmenliğiyle, her çekim yalnızca fotoğraf değil, görsel bir hikâyeye dönüşür.",
       },
+      ctaPrimary: ui.startChat,
+      ctaSecondary: { en: "View gallery", fa: "مشاهده گالری", tr: "Galeriyi Gör" },
+    },
+    marquee: {
+      images: [
+        {
+          src: "/images/portfolio/portfolio-01.jpg",
+          alt: {
+            en: "Bride and groom on a grand staircase in Istanbul",
+            fa: "عروس و داماد روی پله‌های بزرگ در استانبول",
+            tr: "İstanbul'da büyük bir merdivende gelin ve damat",
+          },
+        },
+        {
+          src: "/images/portfolio/portfolio-02.jpg",
+          alt: {
+            en: "Intimate wedding portrait by candlelight in Istanbul",
+            fa: "پرتره صمیمی عروسی در نور شمع در استانبول",
+            tr: "İstanbul'da mum ışığında samimi bir düğün portresi",
+          },
+        },
+        {
+          src: "/images/portfolio/portfolio-03.jpg",
+          alt: {
+            en: "Bride and groom sharing a quiet moment on the stairs",
+            fa: "لحظه‌ای آرام میان عروس و داماد روی پله‌ها",
+            tr: "Merdivenlerde sakin bir an paylaşan gelin ve damat",
+          },
+        },
+        {
+          src: "/images/portfolio/portfolio-04.jpg",
+          alt: {
+            en: "Wedding couple portrait among vintage Istanbul interiors",
+            fa: "پرتره زوج عروسی در فضای دکوراسیون کلاسیک استانبول",
+            tr: "İstanbul'un vintage iç mekanlarında düğün çifti portresi",
+          },
+        },
+        {
+          src: "/images/portfolio/portfolio-05.jpg",
+          alt: {
+            en: "Bride holding a bouquet in a historic Istanbul hall",
+            fa: "عروس با دسته‌گل در سالنی تاریخی در استانبول",
+            tr: "İstanbul'da tarihi bir salonda buket tutan gelin",
+          },
+        },
+        {
+          src: "/images/portfolio/portfolio-06.jpg",
+          alt: {
+            en: "Bride and groom by an arched window in Istanbul",
+            fa: "عروس و داماد کنار پنجره‌ای قدیمی در استانبول",
+            tr: "İstanbul'da kemerli bir pencere kenarında gelin ve damat",
+          },
+        },
+        {
+          src: "/images/portfolio/portfolio-07.jpg",
+          alt: {
+            en: "Wedding portrait beneath a crystal chandelier in Istanbul",
+            fa: "پرتره عروسی زیر لوستر کریستالی در استانبول",
+            tr: "İstanbul'da kristal avize altında düğün portresi",
+          },
+        },
+        {
+          src: "/images/portfolio/portfolio-08.jpg",
+          alt: {
+            en: "Bride and groom in a vintage Istanbul lounge",
+            fa: "عروس و داماد در سالن کلاسیک استانبول",
+            tr: "İstanbul'da vintage bir salonda gelin ve damat",
+          },
+        },
+        {
+          src: "/images/portfolio/portfolio-09.jpg",
+          alt: {
+            en: "Wedding couple reflected in a gilded mirror in Istanbul",
+            fa: "زوج عروسی در آینه‌ای طلایی در استانبول",
+            tr: "İstanbul'da yaldızlı bir aynada yansıyan düğün çifti",
+          },
+        },
+        {
+          src: "/images/portfolio/portfolio-10.jpg",
+          alt: {
+            en: "Bride and groom framed through a glass door in Istanbul",
+            fa: "عروس و داماد در قاب دری شیشه‌ای در استانبول",
+            tr: "İstanbul'da bir cam kapı çerçevesinde gelin ve damat",
+          },
+        },
+      ],
+    },
+    quote: {
+      text: {
+        en: "We don't just photograph weddings. We direct memories.",
+        fa: "ما فقط عروسی را عکاسی نمی‌کنیم؛ خاطره را کارگردانی می‌کنیم.",
+        tr: "Biz sadece düğün fotoğrafı çekmiyoruz; anıları yönetiyoruz.",
+      },
+      author: "ISO Wedding — by Tavakoli Studio",
+      image: "/images/portfolio/portfolio-02.jpg",
+    },
+    packages: {
+      eyebrow: { en: "Packages", fa: "پکیج‌ها", tr: "Paketler" },
+      heading: { en: "Ways to Tell Your Story", fa: "راه‌های روایت داستان شما", tr: "Hikayenizi Anlatmanın Yolları" },
+      cta: { en: "Ask availability", fa: "استعلام زمان خالی", tr: "Uygunluk Sor" },
+      items: [
+        {
+          id: "couple-session",
+          title: { en: "Couple Session", fa: "کاپل‌شوت", tr: "Çift Çekimi" },
+          description: {
+            en: "For couples, anniversaries, travel memories and romantic Istanbul portraits.",
+            fa: "برای کاپل‌شوت، سالگرد، سفر عاشقانه و پرتره‌های دونفره در استانبول.",
+            tr: "Çift çekimleri, yıl dönümü, seyahat anıları ve romantik İstanbul portreleri.",
+          },
+        },
+        {
+          id: "pre-wedding-formality",
+          title: { en: "Pre-Wedding / Formality", fa: "فرمالیته / پیش‌عروسی", tr: "Pre-Wedding / Nişan" },
+          description: {
+            en: "A cinematic pre-wedding story across Istanbul's most iconic locations.",
+            fa: "روایت سینمایی فرمالیته و پیش‌عروسی در لوکیشن‌های خاص استانبول.",
+            tr: "İstanbul'un özel lokasyonlarında sinematik dış çekim ve nişan hikâyesi.",
+          },
+        },
+        {
+          id: "wedding-photo-film",
+          title: { en: "Wedding Photo & Film", fa: "عکس و فیلم عروسی", tr: "Düğün Fotoğraf & Film" },
+          description: {
+            en: "Photography and film coverage for wedding days, ceremonies and luxury celebrations.",
+            fa: "پوشش عکس و فیلم روز عروسی، مراسم و جشن‌های خاص.",
+            tr: "Düğün günü, tören ve özel kutlamalar için fotoğraf ve film çekimi.",
+          },
+        },
+      ],
+    },
+    testimonialsCarousel: {
+      eyebrow: { en: "Kind Words", fa: "نظرات عزیزان ما", tr: "Güzel Sözler" },
+      heading: { en: "What Couples Say", fa: "زوج‌ها چه می‌گویند", tr: "Çiftlerimiz Ne Diyor" },
+      items: [
+        {
+          quote: {
+            en: "The photos felt like scenes from a film, not just wedding pictures.",
+            fa: "عکس‌ها بیشتر شبیه صحنه‌های یک فیلم بودند تا عکس‌های معمولی عروسی.",
+            tr: "Fotoğraflar sıradan düğün karelerinden çok bir film sahnesi gibiydi.",
+          },
+        },
+        {
+          quote: {
+            en: "They knew exactly how to guide us in Istanbul without making anything feel fake.",
+            fa: "در استانبول خیلی خوب راهنمایی‌مان کردند و همه چیز طبیعی و شیک بود.",
+            tr: "İstanbul'da bizi çok doğal ve zarif şekilde yönlendirdiler.",
+          },
+        },
+        {
+          quote: {
+            en: "The final film was emotional, elegant and beyond what we expected.",
+            fa: "فیلم نهایی احساسی، مرتب و خیلی فراتر از انتظار ما بود.",
+            tr: "Final film duygusal, şık ve beklentimizin çok üzerindeydi.",
+          },
+        },
+      ],
+    },
+    featuredStories: {
+      eyebrow: { en: "Featured Stories", fa: "داستان‌های منتخب", tr: "Seçkin Hikâyeler" },
+      heading: { en: "A Closer Look", fa: "نگاهی نزدیک‌تر", tr: "Daha Yakından Bakış" },
+      items: [
+        {
+          id: "bosphorus-wedding-story",
+          title: { en: "Bosphorus Wedding Story", fa: "داستان عروسی در بسفر", tr: "Boğaz'da Düğün Hikâyesi" },
+          description: {
+            en: "Elegant wedding portraits by the water, with Istanbul's skyline as the background.",
+            fa: "پرتره‌های شیک عروسی در کنار آب، با خط آسمان استانبول در پس‌زمینه.",
+            tr: "Suyun kenarında zarif düğün portreleri, arka planda İstanbul'un silüeti.",
+          },
+          image: "/images/portfolio/portfolio-10.jpg",
+        },
+        {
+          id: "galata-couple-session",
+          title: { en: "Galata Couple Session", fa: "کاپل‌شوت گالاتا", tr: "Galata Çift Çekimi" },
+          description: {
+            en: "A refined urban love story through Galata, Karaköy and old Istanbul streets.",
+            fa: "روایتی شیک و شهری از عشق، در گالاتا، کاراکوی و کوچه‌های قدیمی استانبول.",
+            tr: "Galata, Karaköy ve eski İstanbul sokaklarında zarif bir şehir aşkı hikâyesi.",
+          },
+          image: "/images/portfolio/portfolio-08.jpg",
+        },
+        {
+          id: "formality-old-istanbul",
+          title: { en: "Formality in Old Istanbul", fa: "فرمالیته در استانبول قدیم", tr: "Eski İstanbul'da Dış Çekim" },
+          description: {
+            en: "Cinematic pre-wedding imagery shaped by architecture, movement and natural light.",
+            fa: "تصاویر سینمایی فرمالیته، شکل‌گرفته با معماری، حرکت و نور طبیعی.",
+            tr: "Mimari, hareket ve doğal ışıkla şekillenen sinematik dış çekim görselleri.",
+          },
+          image: "/images/portfolio/portfolio-07.jpg",
+        },
+      ],
+    },
+    partnerCta: {
+      heading: {
+        en: "Create your Istanbul wedding story",
+        fa: "داستان عروسی‌تان را در استانبول بسازیم",
+        tr: "İstanbul'daki düğün hikâyenizi birlikte oluşturalım",
+      },
+      cta: { en: "Start chat on WhatsApp", fa: "گفتگو در واتساپ", tr: "WhatsApp'tan Yazın" },
     },
     galleryPreview: {
       eyebrow: { en: "Featured Work", fa: "نمونه کارها", tr: "Seçkin Çalışmalar" },
@@ -121,9 +343,9 @@ export const pages = {
       eyebrow: { en: "The Storytellers", fa: "راویان داستان", tr: "Hikaye Anlatıcıları" },
       heading: { en: "Mohammad & Mahtab", fa: "محمد و مهتاب", tr: "Mohammad & Mahtab" },
       body: {
-        en: "A photographer and filmmaker with over 20 years behind the lens, and a creative director who shapes every story before it's ever photographed. Together, they run Wedding Stories Istanbul from the city they call home.",
+        en: "A photographer and filmmaker with over 20 years behind the lens, and a creative director who shapes every story before it's ever photographed. Together, they run ISO Wedding from the city they call home.",
         fa: "عکاس و فیلم‌سازی با بیش از ۲۰ سال تجربه پشت دوربین، در کنار مدیر خلاقی که پیش از ثبت هر قاب، داستان آن را شکل می‌دهد. آن‌ها این استودیو را از شهری که خانه‌شان می‌نامند، اداره می‌کنند.",
-        tr: "Lensin ardında 20 yılı aşkın deneyime sahip bir fotoğrafçı ve film yapımcısı, ve her kare çekilmeden önce hikayeyi şekillendiren bir yaratıcı direktör. Wedding Stories Istanbul'u, ev dedikleri şehirden birlikte yönetiyorlar.",
+        tr: "Lensin ardında 20 yılı aşkın deneyime sahip bir fotoğrafçı ve film yapımcısı, ve her kare çekilmeden önce hikayeyi şekillendiren bir yaratıcı direktör. ISO Wedding'i, ev dedikleri şehirden birlikte yönetiyorlar.",
       },
       cta: { en: "More About Us", fa: "بیشتر درباره ما", tr: "Hakkımızda Daha Fazla" },
     },
@@ -226,14 +448,14 @@ export const pages = {
   about: {
     seo: {
       title: {
-        en: "About Mohammad & Mahtab | Wedding Stories Istanbul",
-        fa: "درباره محمد و مهتاب | Wedding Stories Istanbul",
-        tr: "Mohammad & Mahtab Hakkında | Wedding Stories Istanbul",
+        en: "About Mohammad & Mahtab | ISO Wedding",
+        fa: "درباره محمد و مهتاب | ISO Wedding",
+        tr: "Mohammad & Mahtab Hakkında | ISO Wedding",
       },
       description: {
-        en: "Meet the photographer, filmmaker and creative director behind Wedding Stories Istanbul — a Tavakoli Studio brand based in Istanbul.",
-        fa: "با عکاس، فیلم‌ساز و مدیر خلاقی پشت Wedding Stories Istanbul آشنا شوید — برندی از Tavakoli Studio، مستقر در استانبول.",
-        tr: "Wedding Stories Istanbul'un arkasındaki fotoğrafçı, film yapımcısı ve yaratıcı direktörle tanışın — İstanbul merkezli bir Tavakoli Studio markası.",
+        en: "Meet the photographer, filmmaker and creative director behind ISO Wedding — a Tavakoli Studio brand based in Istanbul.",
+        fa: "با عکاس، فیلم‌ساز و مدیر خلاقی پشت ISO Wedding آشنا شوید — برندی از Tavakoli Studio، مستقر در استانبول.",
+        tr: "ISO Wedding'in arkasındaki fotoğrafçı, film yapımcısı ve yaratıcı direktörle tanışın — İstanbul merkezli bir Tavakoli Studio markası.",
       },
     },
     hero: {
@@ -254,11 +476,11 @@ export const pages = {
       },
     },
     brandStory: {
-      heading: { en: "Why Wedding Stories Istanbul", fa: "چرا Wedding Stories Istanbul", tr: "Wedding Stories Istanbul Neden Var" },
+      heading: { en: "Why ISO Wedding", fa: "چرا ISO Wedding", tr: "ISO Wedding Neden Var" },
       body: {
-        en: "Wedding Stories Istanbul began as a focused expression of something Mohammad and Mahtab were already doing through Tavakoli Studio: telling love stories, cinematically, in one of the most visually rich cities in the world. Based in Istanbul, the studio was created specifically for couples — Iranian couples living in or travelling to Turkey, Turkish couples, and international couples — who want their wedding, pre-wedding or couple session told with the same care as a film, not just documented like an event.",
-        fa: "Wedding Stories Istanbul به‌عنوان تجلی متمرکزی از کاری آغاز شد که محمد و مهتاب پیش‌تر از طریق Tavakoli Studio انجام می‌دادند: روایت داستان‌های عاشقانه، به‌شکل سینمایی، در یکی از شهرهای از نظر بصری غنی جهان. این استودیو، مستقر در استانبول، مخصوصاً برای زوج‌هایی ساخته شده — زوج‌های ایرانی ساکن یا مسافر به ترکیه، زوج‌های ترک و زوج‌های بین‌المللی — که می‌خواهند عروسی، پره‌وداد یا جلسه کاپل‌شان با همان دقتی روایت شود که یک فیلم دارد، نه صرفاً ثبت شود مثل یک رویداد.",
-        tr: "Wedding Stories Istanbul, Mohammad ve Mahtab'ın Tavakoli Studio aracılığıyla zaten yaptıkları bir şeyin odaklanmış bir ifadesi olarak doğdu: dünyanın görsel açıdan en zengin şehirlerinden birinde, aşk hikayelerini sinematik bir şekilde anlatmak. İstanbul merkezli stüdyo, özellikle çiftler için kuruldu — Türkiye'de yaşayan veya Türkiye'ye gelen İranlı çiftler, Türk çiftler ve uluslararası çiftler — düğünlerinin, pre-wedding çekimlerinin veya çift seanslarının sadece bir etkinlik gibi belgelenmesini değil, bir film kadar özenle anlatılmasını isteyenler için.",
+        en: "ISO Wedding began as a focused expression of something Mohammad and Mahtab were already doing through Tavakoli Studio: telling love stories, cinematically, in one of the most visually rich cities in the world. Based in Istanbul, the studio was created specifically for couples — Iranian couples living in or travelling to Turkey, Turkish couples, and international couples — who want their wedding, pre-wedding or couple session told with the same care as a film, not just documented like an event.",
+        fa: "ISO Wedding به‌عنوان تجلی متمرکزی از کاری آغاز شد که محمد و مهتاب پیش‌تر از طریق Tavakoli Studio انجام می‌دادند: روایت داستان‌های عاشقانه، به‌شکل سینمایی، در یکی از شهرهای از نظر بصری غنی جهان. این استودیو، مستقر در استانبول، مخصوصاً برای زوج‌هایی ساخته شده — زوج‌های ایرانی ساکن یا مسافر به ترکیه، زوج‌های ترک و زوج‌های بین‌المللی — که می‌خواهند عروسی، پره‌وداد یا جلسه کاپل‌شان با همان دقتی روایت شود که یک فیلم دارد، نه صرفاً ثبت شود مثل یک رویداد.",
+        tr: "ISO Wedding, Mohammad ve Mahtab'ın Tavakoli Studio aracılığıyla zaten yaptıkları bir şeyin odaklanmış bir ifadesi olarak doğdu: dünyanın görsel açıdan en zengin şehirlerinden birinde, aşk hikayelerini sinematik bir şekilde anlatmak. İstanbul merkezli stüdyo, özellikle çiftler için kuruldu — Türkiye'de yaşayan veya Türkiye'ye gelen İranlı çiftler, Türk çiftler ve uluslararası çiftler — düğünlerinin, pre-wedding çekimlerinin veya çift seanslarının sadece bir etkinlik gibi belgelenmesini değil, bir film kadar özenle anlatılmasını isteyenler için.",
       },
     },
     closing: {
@@ -273,9 +495,9 @@ export const pages = {
   services: {
     seo: {
       title: {
-        en: "Wedding Photography & Film Services in Istanbul | Wedding Stories Istanbul",
-        fa: "خدمات عکاسی و فیلم عروسی در استانبول | Wedding Stories Istanbul",
-        tr: "İstanbul Düğün Fotoğrafçılığı & Film Hizmetleri | Wedding Stories Istanbul",
+        en: "Wedding Photography & Film Services in Istanbul | ISO Wedding",
+        fa: "خدمات عکاسی و فیلم عروسی در استانبول | ISO Wedding",
+        tr: "İstanbul Düğün Fotoğrafçılığı & Film Hizmetleri | ISO Wedding",
       },
       description: {
         en: "Wedding photography, wedding films, pre-wedding/formality shoots and couple sessions in Istanbul — four ways to tell your story.",
@@ -296,14 +518,14 @@ export const pages = {
   gallery: {
     seo: {
       title: {
-        en: "Wedding & Couple Photography Gallery in Istanbul | Wedding Stories Istanbul",
-        fa: "گالری عکاسی عروسی و کاپل در استانبول | Wedding Stories Istanbul",
-        tr: "İstanbul Düğün & Çift Fotoğrafçılığı Galerisi | Wedding Stories Istanbul",
+        en: "Wedding & Couple Photography Gallery in Istanbul | ISO Wedding",
+        fa: "گالری عکاسی عروسی و کاپل در استانبول | ISO Wedding",
+        tr: "İstanbul Düğün & Çift Fotoğrafçılığı Galerisi | ISO Wedding",
       },
       description: {
-        en: "Browse wedding, pre-wedding, couple session and Istanbul city photography from Wedding Stories Istanbul.",
-        fa: "گالری عکاسی عروسی، پره‌وداد، جلسات کاپل و عکاسی شهری استانبول را در Wedding Stories Istanbul مشاهده کنید.",
-        tr: "Wedding Stories Istanbul'dan düğün, pre-wedding, çift çekimi ve İstanbul şehir fotoğraflarına göz atın.",
+        en: "Browse wedding, pre-wedding, couple session and Istanbul city photography from ISO Wedding.",
+        fa: "گالری عکاسی عروسی، پره‌وداد، جلسات کاپل و عکاسی شهری استانبول را در ISO Wedding مشاهده کنید.",
+        tr: "ISO Wedding'den düğün, pre-wedding, çift çekimi ve İstanbul şehir fotoğraflarına göz atın.",
       },
     },
     hero: {
@@ -326,9 +548,9 @@ export const pages = {
   locations: {
     seo: {
       title: {
-        en: "Best Istanbul Wedding & Couple Photoshoot Locations | Wedding Stories Istanbul",
-        fa: "بهترین لوکیشن‌های عکاسی عروسی و کاپل در استانبول | Wedding Stories Istanbul",
-        tr: "En İyi İstanbul Düğün & Çift Çekimi Lokasyonları | Wedding Stories Istanbul",
+        en: "Best Istanbul Wedding & Couple Photoshoot Locations | ISO Wedding",
+        fa: "بهترین لوکیشن‌های عکاسی عروسی و کاپل در استانبول | ISO Wedding",
+        tr: "En İyi İstanbul Düğün & Çift Çekimi Lokasyonları | ISO Wedding",
       },
       description: {
         en: "Galata, Bosphorus, Ortaköy, Balat, Sultanahmet and more — explore the best Istanbul locations for wedding, pre-wedding and couple photography.",
@@ -349,9 +571,9 @@ export const pages = {
   contact: {
     seo: {
       title: {
-        en: "Contact Us | Wedding Stories Istanbul",
-        fa: "تماس با ما | Wedding Stories Istanbul",
-        tr: "İletişim | Wedding Stories Istanbul",
+        en: "Contact Us | ISO Wedding",
+        fa: "تماس با ما | ISO Wedding",
+        tr: "İletişim | ISO Wedding",
       },
       description: {
         en: "Get in touch about wedding photography, wedding films, pre-wedding or couple sessions in Istanbul — reply within 24 hours.",
@@ -414,9 +636,9 @@ export const pages = {
   blog: {
     seo: {
       title: {
-        en: "Journal | Wedding Stories Istanbul",
-        fa: "ژورنال | Wedding Stories Istanbul",
-        tr: "Blog | Wedding Stories Istanbul",
+        en: "Journal | ISO Wedding",
+        fa: "ژورنال | ISO Wedding",
+        tr: "Blog | ISO Wedding",
       },
       description: {
         en: "Stories, behind-the-scenes notes and wedding inspiration from Istanbul — coming soon.",
@@ -445,11 +667,9 @@ export const footer = {
   quickLinksHeading: { en: "Quick Links", fa: "لینک‌های سریع", tr: "Hızlı Bağlantılar" },
   contactHeading: { en: "Get in Touch", fa: "ارتباط با ما", tr: "İletişim" },
   languageHeading: { en: "Language", fa: "زبان", tr: "Dil" },
-  copyright: {
-    en: "Wedding Stories Istanbul — by Tavakoli Studio. All rights reserved.",
-    fa: "Wedding Stories Istanbul — با امضای Tavakoli Studio. تمامی حقوق محفوظ است.",
-    tr: "Wedding Stories Istanbul — Tavakoli Studio imzasıyla. Tüm hakları saklıdır.",
-  },
+  /** Brand + location stay Latin in every locale, per brand guidelines. */
+  copyrightBrand: "ISO Wedding by Tavakoli Studio",
+  copyrightLocation: "Istanbul, Turkey",
   poweredBy: {
     label: { en: "Powered by", fa: "قدرت گرفته از", tr: "Destekleyen" },
     name: "TAVAKOLISTUDIO",

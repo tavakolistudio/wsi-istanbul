@@ -16,6 +16,7 @@ interface BuildMetadataParams {
   description: string;
   /** Path under /public for the social preview image. */
   imagePath?: string;
+  keywords?: string[];
 }
 
 /**
@@ -28,7 +29,8 @@ export function buildMetadata({
   path,
   title,
   description,
-  imagePath = "/images/hero/hero-istanbul-wedding-1.svg",
+  imagePath = "/images/hero/hero-istanbul-wedding-couple.jpg",
+  keywords,
 }: BuildMetadataParams): Metadata {
   const languages: Record<string, string> = {};
   for (const l of locales) {
@@ -42,6 +44,7 @@ export function buildMetadata({
   return {
     title,
     description,
+    keywords,
     alternates: {
       canonical: url,
       languages,

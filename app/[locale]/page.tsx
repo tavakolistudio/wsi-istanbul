@@ -3,13 +3,12 @@ import { pages } from "@/content/site";
 import { buildMetadata } from "@/lib/metadata";
 import { resolveLocale } from "@/lib/i18n/resolveLocale";
 import { Hero } from "@/components/sections/Hero";
-import { GalleryPreview } from "@/components/sections/GalleryPreview";
-import { AboutPreview } from "@/components/sections/AboutPreview";
-import { ServicesSection } from "@/components/sections/ServicesSection";
-import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
-import { LocationsPreview } from "@/components/sections/LocationsPreview";
-import { Testimonials } from "@/components/sections/Testimonials";
-import { FinalCTA } from "@/components/sections/FinalCTA";
+import { ImageMarquee } from "@/components/sections/ImageMarquee";
+import { QuotePhilosophy } from "@/components/sections/QuotePhilosophy";
+import { PricingPackages } from "@/components/sections/PricingPackages";
+import { TestimonialCarousel } from "@/components/sections/TestimonialCarousel";
+import { FeaturedStories } from "@/components/sections/FeaturedStories";
+import { PartnerCTA } from "@/components/sections/PartnerCTA";
 
 export async function generateMetadata({
   params,
@@ -23,6 +22,7 @@ export async function generateMetadata({
     path: "",
     title: seo.title[locale],
     description: seo.description[locale],
+    keywords: seo.keywords,
   });
 }
 
@@ -32,13 +32,12 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <>
       <Hero locale={locale} />
-      <GalleryPreview locale={locale} />
-      <AboutPreview locale={locale} />
-      <ServicesSection locale={locale} />
-      <WhyChooseUs locale={locale} />
-      <LocationsPreview locale={locale} />
-      <Testimonials locale={locale} />
-      <FinalCTA locale={locale} />
+      <ImageMarquee locale={locale} />
+      <QuotePhilosophy locale={locale} />
+      <PricingPackages locale={locale} />
+      <TestimonialCarousel locale={locale} />
+      <FeaturedStories locale={locale} />
+      <PartnerCTA locale={locale} />
     </>
   );
 }

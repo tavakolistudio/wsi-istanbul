@@ -2,19 +2,23 @@
 
 /*
  * Brand theme tokens (Tailwind v4 CSS-first config).
- * Palette: warm ivory background, soft charcoal text, muted champagne-gold
- * accent, subtle warm-gray UI tones. No bright/saturated colors.
+ * Editorial white/ivory palette with deep navy ink and champagne gold accent.
+ * No bright/saturated colors, no muddy full-screen blocks.
  */
 :root {
-  --color-ivory: #faf7f2;
-  --color-ivory-soft: #f3eee5;
-  --color-charcoal: #211e1b;
-  --color-charcoal-soft: #4a443d;
-  --color-muted: #6f675c;
+  --color-ivory: #f8f3ea;
+  --color-ivory-soft: #e9dcc8;
+  --color-beige: #e9dcc8;
+  --color-charcoal: #051a24;
+  --color-charcoal-soft: #0d212c;
+  --color-primary-dark: #051a24;
+  --color-secondary-dark: #0d212c;
+  --color-brown: #4a3a31;
+  --color-muted: #273c46;
   --color-border: #e4ddd1;
-  --color-gold: #bc9a5e;
-  --color-gold-strong: #9c7c44;
-  --color-gold-soft: #f1e7d2;
+  --color-gold: #c9a76a;
+  --color-gold-strong: #a9824c;
+  --color-gold-soft: #f1e4c9;
 
   /* Locale-aware type roles: swapped per-locale in [data-locale] below. */
   --font-heading: var(--font-heading-latin);
@@ -29,8 +33,12 @@
 @theme inline {
   --color-ivory: var(--color-ivory);
   --color-ivory-soft: var(--color-ivory-soft);
+  --color-beige: var(--color-beige);
   --color-charcoal: var(--color-charcoal);
   --color-charcoal-soft: var(--color-charcoal-soft);
+  --color-primary-dark: var(--color-primary-dark);
+  --color-secondary-dark: var(--color-secondary-dark);
+  --color-brown: var(--color-brown);
   --color-muted: var(--color-muted);
   --color-border: var(--color-border);
   --color-gold: var(--color-gold);
@@ -73,6 +81,34 @@ body {
   transform: translateY(0);
 }
 
+/* Infinite horizontal marquee used by components/sections/ImageMarquee.tsx */
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee-scroll 30s linear infinite;
+}
+
+.marquee-pause-on-hover:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@media (max-width: 640px) {
+  .marquee-track {
+    animation-duration: 16s;
+  }
+}
+
+[dir="rtl"] .marquee-track {
+  animation-direction: reverse;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -82,5 +118,9 @@ body {
     opacity: 1;
     transform: none;
     transition: none;
+  }
+
+  .marquee-track {
+    animation: none;
   }
 }

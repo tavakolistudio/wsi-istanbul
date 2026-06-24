@@ -8,7 +8,7 @@ import { getLocalBusinessJsonLd, getOrganizationJsonLd } from "@/lib/structured-
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { WhatsAppFloatingButton } from "@/components/layout/WhatsAppFloatingButton";
+import { FixedBottomNav } from "@/components/layout/FixedBottomNav";
 import "../globals.css";
 
 export const metadata: Metadata = {
@@ -39,7 +39,7 @@ export default async function LocaleLayout({
         <Header locale={locale} />
         <main className="flex-1">{children}</main>
         <Footer locale={locale} />
-        <WhatsAppFloatingButton locale={locale} />
+        <FixedBottomNav locale={locale} />
       </body>
     </html>
   );

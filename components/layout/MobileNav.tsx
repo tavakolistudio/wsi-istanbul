@@ -6,10 +6,11 @@ import { usePathname } from "next/navigation";
 import type { Locale } from "@/content/types";
 import { primaryNav } from "@/content/navigation";
 import { ui } from "@/content/site";
+import { Button } from "@/components/ui/Button";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
-export function MobileNav({ locale, scrolled }: { locale: Locale; scrolled: boolean }) {
+export function MobileNav({ locale }: { locale: Locale }) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
@@ -31,9 +32,7 @@ export function MobileNav({ locale, scrolled }: { locale: Locale; scrolled: bool
         onClick={() => setOpen((value) => !value)}
         aria-expanded={open}
         aria-label={open ? "Close menu" : "Open menu"}
-        className={`relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-1.5 ${
-          scrolled || open ? "text-charcoal" : "text-ivory"
-        }`}
+        className="relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-1.5 text-charcoal"
       >
         <span className={`h-px w-6 bg-current transition-transform duration-300 ${open ? "translate-y-[3.5px] rotate-45" : ""}`} />
         <span className={`h-px w-6 bg-current transition-transform duration-300 ${open ? "-translate-y-[3.5px] -rotate-45" : ""}`} />
@@ -53,14 +52,9 @@ export function MobileNav({ locale, scrolled }: { locale: Locale; scrolled: bool
           </nav>
 
           <div className="mt-auto flex flex-col gap-6">
-            <a
-              href={getWhatsAppLink()}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-charcoal px-7 py-3 text-sm tracking-wide text-ivory"
-            >
-              {ui.checkAvailability[locale]}
-            </a>
+            <Button href={getWhatsAppLink()} external variant="primary" className="w-full">
+              {ui.startChat[locale]}
+            </Button>
             <LanguageSwitcher locale={locale} className="justify-center text-charcoal" />
           </div>
         </div>

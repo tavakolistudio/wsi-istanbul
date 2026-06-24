@@ -7,6 +7,7 @@ export function getOrganizationJsonLd(locale: Locale) {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: brand.name,
+    description: brand.tagline[locale],
     url: `${siteUrl}/${locale}`,
     logo: `${siteUrl}${brand.logo}`,
     email: contact.email,
@@ -41,7 +42,7 @@ export function getLocalBusinessJsonLd(locale: Locale) {
     sameAs: [contact.instagramUrl],
     founder: founders.map((founder) => ({
       "@type": "Person",
-      name: founder.name,
+      name: founder.name[locale],
       jobTitle: founder.role.en,
     })),
   };
