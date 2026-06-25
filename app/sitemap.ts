@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { defaultLocale, locales } from "@/content/types";
 import { siteUrl } from "@/content/site";
 
-const routes = ["", "/about", "/services", "/gallery", "/locations", "/contact", "/blog"];
+const routes = ["", "/about", "/services", "/gallery", "/locations", "/planner", "/contact", "/blog"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];

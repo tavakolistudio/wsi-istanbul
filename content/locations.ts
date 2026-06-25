@@ -26,6 +26,14 @@ export const locations: LocationSpot[] = [
       fa: "برج گالاتا و کوچه‌های سنگ‌فرش اطراف آن در استانبول",
       tr: "Galata Kulesi ve çevresindeki taş döşeli sokaklar",
     },
+    bestTime: { en: "Golden Hour (5–7 PM)", fa: "ساعت طلایی (۵ تا ۷ بعدازظهر)", tr: "Altın Saat (17.00–19.00)" },
+    crowdLevel: "medium",
+    outfitSuggestion: {
+      en: "Warm earth tones, deep burgundy, soft cream. Avoid black.",
+      fa: "رنگ‌های گرم خاکی، زرشکی تیره، کرم ملایم. از مشکی پرهیز کنید.",
+      tr: "Sıcak toprak tonları, koyu bordo, yumuşak krem. Siyahtan kaçının.",
+    },
+    estimatedDuration: { en: "2–3 hours", fa: "۲ تا ۳ ساعت", tr: "2–3 saat" },
   },
   {
     id: "karakoy",
@@ -47,6 +55,18 @@ export const locations: LocationSpot[] = [
       fa: "محله ساحلی کاراکوی در استانبول هنگام غروب",
       tr: "Akşamüstü İstanbul Karaköy sahil semti",
     },
+    bestTime: {
+      en: "Late afternoon (4–6 PM)",
+      fa: "اواخر بعدازظهر (۴ تا ۶ عصر)",
+      tr: "Öğleden sonra geç saatler (16.00–18.00)",
+    },
+    crowdLevel: "medium",
+    outfitSuggestion: {
+      en: "Sleek neutrals, navy, camel, monochrome looks suit the industrial-chic backdrop.",
+      fa: "رنگ‌های خاکستری شیک، سرمه‌ای، کاراملی و لوک‌های یک‌رنگ با پس‌زمینه صنعتی-شیک هماهنگ‌اند.",
+      tr: "Şık nötr tonlar, lacivert, camel, monokrom görünümler endüstriyel-şık arka planla uyumludur.",
+    },
+    estimatedDuration: { en: "1.5–2.5 hours", fa: "۱.۵ تا ۲.۵ ساعت", tr: "1,5–2,5 saat" },
   },
   {
     id: "bosphorus",
@@ -68,6 +88,18 @@ export const locations: LocationSpot[] = [
       fa: "نمای گسترده‌ای از بسفر در استانبول در ساعت طلایی",
       tr: "Gün batımında İstanbul Boğazı'nın geniş görünümü",
     },
+    bestTime: {
+      en: "Sunrise (6–8 AM) or Sunset (6–8 PM)",
+      fa: "طلوع (۶ تا ۸ صبح) یا غروب (۶ تا ۸ عصر)",
+      tr: "Gün doğumu (06.00–08.00) veya gün batımı (18.00–20.00)",
+    },
+    crowdLevel: "medium",
+    outfitSuggestion: {
+      en: "White, navy, soft blue, sand beige. Avoid dark heavy colors.",
+      fa: "سفید، سرمه‌ای، آبی ملایم، بژ شنی. از رنگ‌های تیره و سنگین پرهیز کنید.",
+      tr: "Beyaz, lacivert, yumuşak mavi, kum beji. Koyu ve ağır renklerden kaçının.",
+    },
+    estimatedDuration: { en: "2–4 hours", fa: "۲ تا ۴ ساعت", tr: "2–4 saat" },
   },
   {
     id: "ortakoy",
@@ -89,6 +121,18 @@ export const locations: LocationSpot[] = [
       fa: "مسجد اورتاکوی با پل بسفر در پس‌زمینه",
       tr: "Arka planda Boğaz Köprüsü ile Ortaköy Camii",
     },
+    bestTime: {
+      en: "Late afternoon (4–6 PM)",
+      fa: "اواخر بعدازظهر (۴ تا ۶ عصر)",
+      tr: "Öğleden sonra geç saatler (16.00–18.00)",
+    },
+    crowdLevel: "medium",
+    outfitSuggestion: {
+      en: "Soft romantic colors — blush, ivory, soft gold. Avoid neon.",
+      fa: "رنگ‌های رمانتیک ملایم — رنگ پوست، ایوری، طلایی ملایم. از نئون پرهیز کنید.",
+      tr: "Yumuşak romantik renkler — pudra pembe, ivory, yumuşak altın. Neondan kaçının.",
+    },
+    estimatedDuration: { en: "1.5–2.5 hours", fa: "۱.۵ تا ۲.۵ ساعت", tr: "1,5–2,5 saat" },
   },
   {
     id: "balat",
@@ -110,6 +154,14 @@ export const locations: LocationSpot[] = [
       fa: "خانه‌های تاریخی رنگی در یک کوچه باریک در بالات، استانبول",
       tr: "Balat'ta dar bir sokakta renkli tarihi evler",
     },
+    bestTime: { en: "Morning (8–11 AM)", fa: "صبح (۸ تا ۱۱ صبح)", tr: "Sabah (08.00–11.00)" },
+    crowdLevel: "low",
+    outfitSuggestion: {
+      en: "Bold colors: red, yellow, cobalt blue. Patterns work well here.",
+      fa: "رنگ‌های جسورانه: قرمز، زرد، آبی کبالت. الگوها و طرح‌ها هم در این لوکیشن جواب می‌دهند.",
+      tr: "Cesur renkler: kırmızı, sarı, kobalt mavi. Desenler burada iyi çalışır.",
+    },
+    estimatedDuration: { en: "2–3 hours", fa: "۲ تا ۳ ساعت", tr: "2–3 saat" },
   },
   {
     id: "sultanahmet",
@@ -131,6 +183,18 @@ export const locations: LocationSpot[] = [
       fa: "گنبدها و مناره‌های خط آسمان سلطان‌احمد در استانبول",
       tr: "İstanbul Sultanahmet silüetindeki kubbeler ve minareler",
     },
+    bestTime: {
+      en: "Early morning (7–9 AM) or golden hour",
+      fa: "اوایل صبح (۷ تا ۹ صبح) یا ساعت طلایی",
+      tr: "Sabahın erken saatleri (07.00–09.00) veya altın saat",
+    },
+    crowdLevel: "high",
+    outfitSuggestion: {
+      en: "Rich, regal tones — deep burgundy, gold, ivory. Avoid clashing with the domes' warm stone color.",
+      fa: "رنگ‌های غنی و سلطنتی — زرشکی تیره، طلایی، ایوری. از تضاد ناهماهنگ با رنگ گرم سنگ گنبدها پرهیز کنید.",
+      tr: "Zengin, asil tonlar — koyu bordo, altın, ivory. Kubbelerin sıcak taş rengiyle çarpışan tonlardan kaçının.",
+    },
+    estimatedDuration: { en: "2–3 hours", fa: "۲ تا ۳ ساعت", tr: "2–3 saat" },
   },
   {
     id: "pierre-loti",
@@ -152,6 +216,18 @@ export const locations: LocationSpot[] = [
       fa: "چشم‌انداز پانورامای شاخ طلایی از تپه پیرلوتی هنگام غروب",
       tr: "Gün batımında Pierre Loti Tepesi'nden Haliç'in panoramik görünümü",
     },
+    bestTime: {
+      en: "Sunrise or late afternoon",
+      fa: "طلوع آفتاب یا اواخر بعدازظهر",
+      tr: "Gün doğumu veya öğleden sonra geç saatler",
+    },
+    crowdLevel: "low",
+    outfitSuggestion: {
+      en: "Earthy tones, terracotta, olive, warm browns. Flowy fabrics.",
+      fa: "رنگ‌های خاکی، تراکوتا، زیتونی، قهوه‌ای گرم. پارچه‌های روان و سبک.",
+      tr: "Toprak tonları, terracotta, zeytin yeşili, sıcak kahverengiler. Akışkan kumaşlar.",
+    },
+    estimatedDuration: { en: "1.5–2.5 hours", fa: "۱.۵ تا ۲.۵ ساعت", tr: "1,5–2,5 saat" },
   },
   {
     id: "rooftop-luxury-yacht",
@@ -177,6 +253,18 @@ export const locations: LocationSpot[] = [
       fa: "تراس خصوصی روفتاپ با چشم‌اندازی به خط آسمان استانبول در شب",
       tr: "Gece İstanbul silüetine bakan özel çatı katı terası",
     },
+    bestTime: {
+      en: "Golden hour or after dark for the skyline lights",
+      fa: "ساعت طلایی یا بعد از تاریک‌شدن هوا برای نورهای خط آسمان",
+      tr: "Altın saat veya gece ışıkları için hava karardıktan sonra",
+    },
+    crowdLevel: "low",
+    outfitSuggestion: {
+      en: "Full luxury styling — champagne, deep gold, emerald, midnight blue.",
+      fa: "استایل کاملاً لوکس — شامپاینی، طلایی تیره، زمردی، سرمه‌ای نیمه‌شب.",
+      tr: "Tam lüks stil — şampanya rengi, koyu altın, zümrüt, gece lacivert.",
+    },
+    estimatedDuration: { en: "2–3 hours", fa: "۲ تا ۳ ساعت", tr: "2–3 saat" },
   },
   {
     id: "grand-hotel-de-londres",
@@ -202,6 +290,18 @@ export const locations: LocationSpot[] = [
       fa: "عروس و داماد روی راه‌پله عتیقه گرند هتل دو لندر در استانبول",
       tr: "İstanbul'daki Grand Hotel de Londres'in antika merdivenlerinde gelin ve damat",
     },
+    bestTime: {
+      en: "Any time — fully indoors, weather-independent",
+      fa: "هر زمانی — کاملاً سرپوشیده و مستقل از آب‌وهوا",
+      tr: "Her zaman — tamamen kapalı mekan, hava koşulundan bağımsız",
+    },
+    crowdLevel: "low",
+    outfitSuggestion: {
+      en: "Antique-inspired tones: deep wine, emerald, ivory lace. Avoid bright modern neons that clash with the vintage decor.",
+      fa: "رنگ‌های الهام‌گرفته از عتیقه: شرابی تیره، زمردی، توری ایوری. از نئون‌های مدرن روشن که با دکور وینتیج ناهماهنگ‌اند پرهیز کنید.",
+      tr: "Antika esintili tonlar: koyu şarap rengi, zümrüt, ivory dantel. Vintage dekorla çelişen parlak modern neonlardan kaçının.",
+    },
+    estimatedDuration: { en: "2–3 hours", fa: "۲ تا ۳ ساعت", tr: "2–3 saat" },
     samplePhotos: [
       "/images/locations/grand-hotel-de-londres/grand-hotel-de-londres-02.jpg",
       "/images/locations/grand-hotel-de-londres/grand-hotel-de-londres-03.jpg",

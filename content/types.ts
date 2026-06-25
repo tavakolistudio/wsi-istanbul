@@ -60,6 +60,8 @@ export interface Testimonial {
   initials: string;
 }
 
+export type CrowdLevel = "low" | "medium" | "high";
+
 export interface LocationSpot {
   id: string;
   slug: string;
@@ -70,6 +72,11 @@ export interface LocationSpot {
   imageAlt: LocalizedText;
   /** A few real bride & groom sample photos shown alongside this location. */
   samplePhotos?: string[];
+  /** Used by the "Plan Your Shoot" wizard (components/planner/*). */
+  bestTime?: LocalizedText;
+  crowdLevel?: CrowdLevel;
+  outfitSuggestion?: LocalizedText;
+  estimatedDuration?: LocalizedText;
 }
 
 export interface NavItem {

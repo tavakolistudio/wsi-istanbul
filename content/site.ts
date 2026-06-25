@@ -569,6 +569,20 @@ export const pages = {
       },
     },
   },
+  planner: {
+    seo: {
+      title: {
+        en: "Plan Your Shoot | ISO Wedding",
+        fa: "برنامه‌ریزی عکاسی | ISO Wedding",
+        tr: "Çekim Planla | ISO Wedding",
+      },
+      description: {
+        en: "Plan your Istanbul wedding or couple shoot step by step — project type, location, visual style, outfit advice and an estimated budget.",
+        fa: "جلسه عکاسی عروسی یا کاپل خود در استانبول را گام‌به‌گام برنامه‌ریزی کنید — نوع پروژه، لوکیشن، سبک بصری، راهنمای لباس و بودجه تخمینی.",
+        tr: "İstanbul'daki düğün veya çift çekiminizi adım adım planlayın — proje türü, konum, görsel stil, kıyafet önerisi ve tahmini bütçe.",
+      },
+    },
+  },
   contact: {
     seo: {
       title: {

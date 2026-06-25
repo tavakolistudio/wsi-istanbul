@@ -10,6 +10,7 @@ export const primaryNav: NavItem[] = [
     label: { en: "Istanbul Locations", fa: "لوکیشن‌های استانبول", tr: "İstanbul Lokasyonları" },
     path: "/locations",
   },
+  { label: { en: "Plan Your Shoot", fa: "برنامه‌ریزی عکاسی", tr: "Çekim Planla" }, path: "/planner" },
   { label: { en: "Contact", fa: "تماس با ما", tr: "İletişim" }, path: "/contact" },
 ];
 
