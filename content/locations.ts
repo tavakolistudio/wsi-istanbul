@@ -1,7 +1,7 @@
 import type { LocationSpot } from "./types";
 
 /**
- * The 9 featured Istanbul shoot locations. Written for organic search
+ * The 10 featured Istanbul shoot locations. Written for organic search
  * relevance (Istanbul wedding photographer/videographer, pre-wedding &
  * couple photoshoot Istanbul) while staying editorial, not keyword-stuffed.
  */
@@ -313,6 +313,61 @@ export const locations: LocationSpot[] = [
       "/images/locations/grand-hotel-de-londres/grand-hotel-de-londres-09.jpg",
       "/images/locations/grand-hotel-de-londres/grand-hotel-de-londres-10.jpg",
       "/images/locations/grand-hotel-de-londres/grand-hotel-de-londres-11.jpg",
+    ],
+  },
+  {
+    id: "galata-bridge",
+    slug: "galata-bridge",
+    name: {
+      en: "Galata Bridge (Eminönü)",
+      fa: "پل گالاتا (امینونو)",
+      tr: "Galata Köprüsü (Eminönü)",
+    },
+    description: {
+      en: "Where the Golden Horn meets the Bosphorus, Galata Bridge's lower deck — lined with fish restaurants and framed by its distinctive iron archways — opens onto postcard views of the Galata Tower skyline on one side and the domes of Süleymaniye Mosque on the other. Few spots pack more of Istanbul into a single frame.",
+      fa: "جایی که شاخ طلایی به بسفر می‌رسد، طبقه پایین پل گالاتا — با رستوران‌های ماهی‌فروشی و طاق‌های آهنی متمایزش — به چشم‌اندازی همچون کارت‌پستال از خط آسمان برج گالاتا از یک سو و گنبدهای مسجد سلیمانیه از سوی دیگر باز می‌شود. کمتر جایی این‌قدر از استانبول را در یک قاب جمع می‌کند.",
+      tr: "Haliç'in Boğaz'la buluştuğu noktada, balık restoranlarıyla dolu ve kendine özgü demir kemerleriyle çevrili Galata Köprüsü'nün alt katı — bir yanda Galata Kulesi silüetine, diğer yanda Süleymaniye Camii'nin kubbelerine açılan kartpostallık manzaralar sunar. Çok az yer İstanbul'u tek bir karede bu kadar yoğun barındırır.",
+    },
+    mood: {
+      en: "Lively, golden, unmistakably Istanbul on the water.",
+      fa: "پرجنب‌وجوش، طلایی و بی‌اشتباه استانبولی بر روی آب.",
+      tr: "Hareketli, altın rengi ve su üzerinde tartışmasız İstanbul.",
+    },
+    image: "/images/locations/galata-bridge/galata-bridge-01.jpg",
+    imageAlt: {
+      en: "Bride and groom on Galata Bridge with the Galata Tower skyline behind them at golden hour",
+      fa: "عروس و داماد روی پل گالاتا با خط آسمان برج گالاتا در پس‌زمینه، در ساعت طلایی",
+      tr: "Altın saatte Galata Köprüsü'nde, arka planda Galata Kulesi silüetiyle gelin ve damat",
+    },
+    bestTime: {
+      en: "Sunset (6–8 PM)",
+      fa: "غروب آفتاب (۶ تا ۸ عصر)",
+      tr: "Gün batımı (18.00–20.00)",
+    },
+    crowdLevel: "high",
+    outfitSuggestion: {
+      en: "Classic black tie and ivory lace or satin gowns work beautifully against the warm stone and iron tones. Avoid neon brights that clash with the bridge's blue ironwork.",
+      fa: "کت‌وشلوار کلاسیک مشکی و لباس‌های توری یا ساتن ایوری با تن‌رنگ‌های گرم سنگ و آهن بسیار هماهنگ‌اند. از رنگ‌های نئون که با فلز آبی پل ناهماهنگ‌اند پرهیز کنید.",
+      tr: "Klasik siyah takım ve ivory dantel veya saten gelinlikler, sıcak taş ve demir tonlarıyla muhteşem uyum sağlar. Köprünün mavi demir işçiliğiyle çarpışan neon renklerden kaçının.",
+    },
+    estimatedDuration: { en: "2–3 hours", fa: "۲ تا ۳ ساعت", tr: "2–3 saat" },
+    samplePhotos: [
+      "/images/locations/galata-bridge/galata-bridge-02.jpg",
+      "/images/locations/galata-bridge/galata-bridge-03.jpg",
+      "/images/locations/galata-bridge/galata-bridge-04.jpg",
+      "/images/locations/galata-bridge/galata-bridge-05.jpg",
+      "/images/locations/galata-bridge/galata-bridge-06.jpg",
+      "/images/locations/galata-bridge/galata-bridge-07.jpg",
+      "/images/locations/galata-bridge/galata-bridge-08.jpg",
+      "/images/locations/galata-bridge/galata-bridge-09.jpg",
+      "/images/locations/galata-bridge/galata-bridge-10.jpg",
+      "/images/locations/galata-bridge/galata-bridge-11.jpg",
+      "/images/locations/galata-bridge/galata-bridge-12.jpg",
+      "/images/locations/galata-bridge/galata-bridge-13.jpg",
+      "/images/locations/galata-bridge/galata-bridge-14.jpg",
+      "/images/locations/galata-bridge/galata-bridge-15.jpg",
+      "/images/locations/galata-bridge/galata-bridge-16.jpg",
+      "/images/locations/galata-bridge/galata-bridge-17.jpg",
     ],
   },
 ];
