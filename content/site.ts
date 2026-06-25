@@ -80,6 +80,7 @@ export const ui = {
   readMore: { en: "Read More", fa: "ادامه مطلب", tr: "Devamını Oku" },
   bookOnWhatsapp: { en: "Book on WhatsApp", fa: "رزرو در واتساپ", tr: "WhatsApp'tan Rezervasyon" },
   backToHome: { en: "Back to Home", fa: "بازگشت به خانه", tr: "Ana Sayfaya Dön" },
+  backToLocations: { en: "Back to Locations", fa: "بازگشت به لوکیشن‌ها", tr: "Lokasyonlara Dön" },
   allLabel: { en: "All", fa: "همه", tr: "Tümü" },
 };
 
