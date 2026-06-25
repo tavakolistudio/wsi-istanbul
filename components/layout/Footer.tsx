@@ -75,7 +75,7 @@ export function Footer({ locale }: { locale: Locale }) {
       </Container>
 
       <div className="border-t border-border">
-        <Container className="flex flex-col items-center justify-between gap-2 py-6 text-xs text-muted sm:flex-row">
+        <Container className="flex flex-col items-center justify-between gap-2 py-6 pb-32 text-xs text-muted sm:flex-row sm:pb-6">
           <p className="text-center sm:text-start">
             © {year} {footerContent.copyrightBrand}
             <br />
