@@ -164,7 +164,7 @@ export const locations: LocationSpot[] = [
       fa: "نمادین، شیک و سینمایی همچون یک کارت‌پستال.",
       tr: "İkonik, zarif ve kartpostal gibi sinematik.",
     },
-    image: "/images/locations/location-ortakoy.svg",
+    image: "/images/locations/ortakoy/ortakoy-01.jpg",
     imageAlt: {
       en: "Ortaköy Mosque with the Bosphorus Bridge in the background",
       fa: "مسجد اورتاکوی با پل بسفر در پس‌زمینه",
@@ -182,6 +182,17 @@ export const locations: LocationSpot[] = [
       tr: "Yumuşak romantik renkler — pudra pembe, ivory, yumuşak altın. Neondan kaçının.",
     },
     estimatedDuration: { en: "1.5–2.5 hours", fa: "۱.۵ تا ۲.۵ ساعت", tr: "1,5–2,5 saat" },
+    samplePhotos: [
+      "/images/locations/ortakoy/ortakoy-02.jpg",
+      "/images/locations/ortakoy/ortakoy-03.jpg",
+      "/images/locations/ortakoy/ortakoy-04.jpg",
+      "/images/locations/ortakoy/ortakoy-05.jpg",
+      "/images/locations/ortakoy/ortakoy-06.jpg",
+      "/images/locations/ortakoy/ortakoy-07.jpg",
+      "/images/locations/ortakoy/ortakoy-08.jpg",
+      "/images/locations/ortakoy/ortakoy-09.jpg",
+      "/images/locations/ortakoy/ortakoy-10.jpg",
+    ],
   },
   {
     id: "balat",
