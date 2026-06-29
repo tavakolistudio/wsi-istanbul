@@ -219,6 +219,30 @@ export const pages = {
             tr: "İstanbul'da bir cam kapı çerçevesinde gelin ve damat",
           },
         },
+        {
+          src: "/images/locations/rooftop-luxury-yacht/rooftop-luxury-yacht-02.jpg",
+          alt: {
+            en: "Bride and groom on a private rooftop terrace overlooking Istanbul",
+            fa: "عروس و داماد روی تراس خصوصی روفتاپ با چشم‌اندازی به استانبول",
+            tr: "İstanbul manzaralı özel bir çatı katı terasında gelin ve damat",
+          },
+        },
+        {
+          src: "/images/locations/rooftop-luxury-yacht/rooftop-luxury-yacht-04.jpg",
+          alt: {
+            en: "Bride and groom aboard a private yacht on the Bosphorus at sunset",
+            fa: "عروس و داماد روی قایق اختصاصی در بسفر هنگام غروب",
+            tr: "Gün batımında Boğaz'da özel bir yatta gelin ve damat",
+          },
+        },
+        {
+          src: "/images/locations/rooftop-luxury-yacht/rooftop-luxury-yacht-06.jpg",
+          alt: {
+            en: "Bride in a luxury hotel suite overlooking the Bosphorus",
+            fa: "عروس در سوییت لوکس هتل با چشم‌اندازی به بسفر",
+            tr: "Boğaz manzaralı lüks bir otel süitinde gelin",
+          },
+        },
       ],
     },
     quote: {
@@ -228,7 +252,7 @@ export const pages = {
         tr: "Biz sadece düğün fotoğrafı çekmiyoruz; anıları yönetiyoruz.",
       },
       author: "ISO Wedding — by Tavakoli Studio",
-      image: "/images/portfolio/portfolio-02.jpg",
+      image: "/images/locations/rooftop-luxury-yacht/rooftop-luxury-yacht-03.jpg",
     },
     packages: {
       eyebrow: { en: "Packages", fa: "پکیج‌ها", tr: "Paketler" },

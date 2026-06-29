@@ -289,7 +289,7 @@ export const locations: LocationSpot[] = [
       fa: "مرتفع، آرام و ساخته‌شده برای ساعت طلایی.",
       tr: "Yüksek, sakin ve gün batımı için yaratılmış.",
     },
-    image: "/images/locations/location-pierre-loti.svg",
+    image: "/images/locations/pierre-loti/pierre-loti-01.jpg",
     imageAlt: {
       en: "Panoramic view of the Golden Horn from Pierre Loti Hill at sunset",
       fa: "چشم‌انداز پانورامای شاخ طلایی از تپه پیرلوتی هنگام غروب",
@@ -307,6 +307,17 @@ export const locations: LocationSpot[] = [
       tr: "Toprak tonları, terracotta, zeytin yeşili, sıcak kahverengiler. Akışkan kumaşlar.",
     },
     estimatedDuration: { en: "1.5–2.5 hours", fa: "۱.۵ تا ۲.۵ ساعت", tr: "1,5–2,5 saat" },
+    samplePhotos: [
+      "/images/locations/pierre-loti/pierre-loti-02.jpg",
+      "/images/locations/pierre-loti/pierre-loti-03.jpg",
+      "/images/locations/pierre-loti/pierre-loti-04.jpg",
+      "/images/locations/pierre-loti/pierre-loti-05.jpg",
+      "/images/locations/pierre-loti/pierre-loti-06.jpg",
+      "/images/locations/pierre-loti/pierre-loti-07.jpg",
+      "/images/locations/pierre-loti/pierre-loti-08.jpg",
+      "/images/locations/pierre-loti/pierre-loti-09.jpg",
+      "/images/locations/pierre-loti/pierre-loti-10.jpg",
+    ],
   },
   {
     id: "rooftop-luxury-yacht",
@@ -326,7 +337,7 @@ export const locations: LocationSpot[] = [
       fa: "اختصاصی، شیک و لوکس بدون تلاش اضافی.",
       tr: "Ayrıcalıklı, zarif ve zahmetsizce lüks.",
     },
-    image: "/images/locations/location-rooftop-yacht.svg",
+    image: "/images/locations/rooftop-luxury-yacht/rooftop-luxury-yacht-01.jpg",
     imageAlt: {
       en: "Private rooftop terrace overlooking the Istanbul skyline at night",
       fa: "تراس خصوصی روفتاپ با چشم‌اندازی به خط آسمان استانبول در شب",
@@ -344,6 +355,17 @@ export const locations: LocationSpot[] = [
       tr: "Tam lüks stil — şampanya rengi, koyu altın, zümrüt, gece lacivert.",
     },
     estimatedDuration: { en: "2–3 hours", fa: "۲ تا ۳ ساعت", tr: "2–3 saat" },
+    samplePhotos: [
+      "/images/locations/rooftop-luxury-yacht/rooftop-luxury-yacht-02.jpg",
+      "/images/locations/rooftop-luxury-yacht/rooftop-luxury-yacht-03.jpg",
+      "/images/locations/rooftop-luxury-yacht/rooftop-luxury-yacht-04.jpg",
+      "/images/locations/rooftop-luxury-yacht/rooftop-luxury-yacht-05.jpg",
+      "/images/locations/rooftop-luxury-yacht/rooftop-luxury-yacht-06.jpg",
+      "/images/locations/rooftop-luxury-yacht/rooftop-luxury-yacht-07.jpg",
+      "/images/locations/rooftop-luxury-yacht/rooftop-luxury-yacht-08.jpg",
+      "/images/locations/rooftop-luxury-yacht/rooftop-luxury-yacht-09.jpg",
+      "/images/locations/rooftop-luxury-yacht/rooftop-luxury-yacht-10.jpg",
+    ],
   },
   {
     id: "grand-hotel-de-londres",
