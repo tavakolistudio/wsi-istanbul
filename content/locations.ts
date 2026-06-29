@@ -20,7 +20,7 @@ export const locations: LocationSpot[] = [
       fa: "رومانتیک، تاریخی و در هر ساعتی از روز فوق‌العاده عکس‌پذیر.",
       tr: "Romantik, tarihi ve günün her saatinde fotojenik.",
     },
-    image: "/images/locations/location-galata.svg",
+    image: "/images/locations/galata/galata-01.jpg",
     imageAlt: {
       en: "Galata Tower and the surrounding cobblestone streets of Istanbul",
       fa: "برج گالاتا و کوچه‌های سنگ‌فرش اطراف آن در استانبول",
@@ -34,6 +34,14 @@ export const locations: LocationSpot[] = [
       tr: "Sıcak toprak tonları, koyu bordo, yumuşak krem. Siyahtan kaçının.",
     },
     estimatedDuration: { en: "2–3 hours", fa: "۲ تا ۳ ساعت", tr: "2–3 saat" },
+    samplePhotos: [
+      "/images/locations/galata/galata-02.jpg",
+      "/images/locations/galata/galata-03.jpg",
+      "/images/locations/galata/galata-04.jpg",
+      "/images/locations/galata/galata-05.jpg",
+      "/images/locations/galata/galata-06.jpg",
+      "/images/locations/galata/galata-07.jpg",
+    ],
     photoSpots: {
       en: [
         "Galata Bridge",
@@ -78,7 +86,7 @@ export const locations: LocationSpot[] = [
       fa: "شهری، مدرن و آرام‌آرام سینمایی.",
       tr: "Kentsel, modern ve sessizce sinematik.",
     },
-    image: "/images/locations/location-karakoy.svg",
+    image: "/images/locations/karakoy/karakoy-01.jpg",
     imageAlt: {
       en: "Karaköy waterfront district in Istanbul at dusk",
       fa: "محله ساحلی کاراکوی در استانبول هنگام غروب",
@@ -96,6 +104,11 @@ export const locations: LocationSpot[] = [
       tr: "Şık nötr tonlar, lacivert, camel, monokrom görünümler endüstriyel-şık arka planla uyumludur.",
     },
     estimatedDuration: { en: "1.5–2.5 hours", fa: "۱.۵ تا ۲.۵ ساعت", tr: "1,5–2,5 saat" },
+    samplePhotos: [
+      "/images/locations/karakoy/karakoy-02.jpg",
+      "/images/locations/karakoy/karakoy-03.jpg",
+      "/images/locations/karakoy/karakoy-04.jpg",
+    ],
   },
   {
     id: "bosphorus",
