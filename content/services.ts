@@ -99,7 +99,7 @@ export const services: Service[] = [
     slug: "pre-wedding-formality",
     title: {
       en: "Pre-Wedding / Formality Shoots",
-      fa: "عکاسی پره‌وداد / فرمالیته",
+      fa: "عکاسی پیش‌عروسی / فرمالیته",
       tr: "Pre-Wedding / Nişan Çekimi",
     },
     intro: {
@@ -138,7 +138,7 @@ export const services: Service[] = [
     },
     whatsappMessage: {
       en: "Hi! I'd love to ask about a pre-wedding / formality shoot in Istanbul.",
-      fa: "سلام! می‌خواستم درباره یک جلسه عکاسی پره‌وداد یا فرمالیته در استانبول بپرسم.",
+      fa: "سلام! می‌خواستم درباره یک جلسه عکاسی پیش‌عروسی یا فرمالیته در استانبول بپرسم.",
       tr: "Merhaba! İstanbul'da bir pre-wedding / nişan çekimi hakkında bilgi almak istiyorum.",
     },
   },
