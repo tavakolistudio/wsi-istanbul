@@ -40,7 +40,7 @@ export const founders = [
       fa: "محمد عکاس و فیلم‌ساز ایرانی با بیش از ۲۰ سال تجربه در عکاسی، فیلم‌سازی و روایت‌گری بصری است. در طول دو دهه، کار او از عکاسی خبری به سوی زبان بصری صمیمی و سینمایی‌ای حرکت کرده که امروز هویت ISO Wedding را شکل می‌دهد. او به هر عروسی همان‌گونه نزدیک می‌شود که به یک پلاتوی فیلم‌برداری — نور را می‌خوانَد، لحظات را پیش‌بینی می‌کند و آن‌قدر نزدیک می‌ماند که واقعیت را ثبت کند، بدون آنکه هرگز مانع آن شود.",
       tr: "Mohammad, fotoğrafçılık, film yapımcılığı ve görsel hikaye anlatıcılığında 20 yılı aşkın deneyime sahip İranlı bir fotoğrafçı ve film yapımcısıdır. İki on yıl boyunca çalışmaları, gazetecilik tarzı görüntü üretiminden, bugün ISO Wedding'i tanımlayan samimi ve sinematik görsel dile doğru evrildi. Her düğüne bir film setine yaklaştığı gibi yaklaşır — ışığı okur, anları önceden sezer ve gerçek olanı yakalayacak kadar yakın durup asla önüne geçmez.",
     },
-    image: "/images/about/about-mohammad-tavakoli.svg",
+    image: "/images/about/about-mohammad-tavakoli.jpg",
   },
   {
     id: "mahtab",
