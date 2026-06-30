@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { contact, pages } from "@/content/site";
 import { buildMetadata } from "@/lib/metadata";
 import { resolveLocale } from "@/lib/i18n/resolveLocale";
@@ -35,6 +36,19 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
         heading={content.hero.heading[locale]}
         subtitle={content.hero.subtitle[locale]}
       />
+
+      <FadeIn>
+        <div className="relative aspect-[21/9] w-full overflow-hidden">
+          <Image
+            src="/images/contact-hero.png"
+            alt="ISO Wedding — Tavakoli Studio"
+            fill
+            sizes="100vw"
+            className="object-cover"
+            priority
+          />
+        </div>
+      </FadeIn>
 
       <section className="py-16 sm:py-20">
         <Container className="grid gap-16 lg:grid-cols-[3fr_2fr]">
