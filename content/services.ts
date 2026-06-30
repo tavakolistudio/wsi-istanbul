@@ -82,7 +82,7 @@ export const services: Service[] = [
         "Renk düzeltmeli, yayın kalitesinde teslimat",
       ],
     },
-    image: "/images/gallery/gallery-sultanahmet-wedding-1.svg",
+    image: "/images/services/service-wedding-film.png",
     imageAlt: {
       en: "Wedding couple filmed near Sultanahmet's historic skyline in Istanbul",
       fa: "فیلم‌برداری از زوج عروسی نزدیک خط آسمان تاریخی سلطان‌احمد در استانبول",
