@@ -22,7 +22,7 @@ export const contact = {
   /** Digits-only, used to build wa.me links. */
   whatsappDigits: "905016967777",
   instagramHandle: "@tavakolistudio",
-  instagramUrl: "https://instagram.com/tavakolistudio",
+  instagramUrl: "https://instagram.com/iso.wedding",
   email: "tavakolipix@gmail.com",
 };
 
