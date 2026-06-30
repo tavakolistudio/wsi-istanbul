@@ -55,7 +55,7 @@ export const founders = [
       fa: "مهتاب مدیر خلاق، نویسنده و استراتژیست ایده با چشم‌اندازی روایی و هنری قوی است. او داستان پشت هر جلسه عکاسی را مدت‌ها پیش از ثبت اولین قاب شکل می‌دهد — از فضا و ریتم یک فیلم عروسی تا کلماتی که همراه آن می‌آیند. پیشینه او در نویسندگی و ایده‌پردازی، لایه‌ای از معنا به کار استودیو می‌افزاید که فراتر از تصویر است و هر پروژه را به چیزی نزدیک‌تر به یک داستان کوتاه تبدیل می‌کند تا یک ست عکاسی.",
       tr: "Mahtab, güçlü bir anlatı ve sanatsal vizyona sahip bir yaratıcı direktör, yazar ve fikir stratejistidir. Her çekimin ardındaki hikayeyi, ilk kare çekilmeden çok önce şekillendirir — bir düğün filminin atmosferinden ve temposundan, ona eşlik eden kelimelere kadar. Yazarlık ve fikir geliştirme geçmişi, stüdyonun çalışmalarına görselin ötesinde bir anlam katmanı ekler ve her projeyi bir fotoğraf setinden çok kısa bir hikayeye yaklaştırır.",
     },
-    image: "/images/about/about-mahtab-behrayan.svg",
+    image: "/images/about/about-mahtab-behrayan.jpg",
   },
 ];
 
