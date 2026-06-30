@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { founders, pages } from "@/content/site";
 import { buildMetadata } from "@/lib/metadata";
 import { resolveLocale } from "@/lib/i18n/resolveLocale";
@@ -33,6 +34,19 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         heading={content.hero.heading[locale]}
         subtitle={content.hero.subtitle[locale]}
       />
+
+      <FadeIn>
+        <div className="relative aspect-[21/9] w-full overflow-hidden">
+          <Image
+            src="/images/about/about-hero.jpg"
+            alt="Mohammad Tavakoli filming a wedding in Istanbul"
+            fill
+            sizes="100vw"
+            className="object-cover"
+            priority
+          />
+        </div>
+      </FadeIn>
 
       <section className="py-20 sm:py-28">
         <Container className="max-w-3xl">
