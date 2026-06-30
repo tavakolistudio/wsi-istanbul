@@ -38,7 +38,7 @@ export const services: Service[] = [
         "Paylaşım ve indirme için özel online galeri",
       ],
     },
-    image: "/images/gallery/gallery-bosphorus-wedding-1.svg",
+    image: "/images/services/service-wedding-photography.jpg",
     imageAlt: {
       en: "Bride and groom on a Bosphorus waterfront at golden hour in Istanbul",
       fa: "عروس و داماد در ساعت طلایی در کنار بسفر استانبول",
