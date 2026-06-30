@@ -71,6 +71,17 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             <p className="mt-5 text-base leading-relaxed text-muted sm:text-lg">{content.brandStory.body[locale]}</p>
           </FadeIn>
         </Container>
+        <FadeIn delay={100}>
+          <div className="relative mx-auto mt-14 aspect-[21/9] w-full overflow-hidden">
+            <Image
+              src="/images/about/about-brand-story.png"
+              alt="ISO Wedding — Tavakoli Studio"
+              fill
+              sizes="100vw"
+              className="object-cover"
+            />
+          </div>
+        </FadeIn>
       </section>
 
       <section className="bg-charcoal py-20 sm:py-28">
