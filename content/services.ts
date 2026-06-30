@@ -175,7 +175,7 @@ export const services: Service[] = [
         "Hızlı teslim ön izleme galerisi",
       ],
     },
-    image: "/images/gallery/gallery-galata-couple-1.svg",
+    image: "/images/services/service-couple-session.png",
     imageAlt: {
       en: "Couple walking near Galata Tower during a couple session in Istanbul",
       fa: "زوجی در حال قدم‌زدن نزدیک برج گالاتا در یک جلسه عکاسی کاپل در استانبول",
