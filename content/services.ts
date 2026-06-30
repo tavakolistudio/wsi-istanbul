@@ -130,7 +130,7 @@ export const services: Service[] = [
         "Davetiye ve save-the-date için ideal",
       ],
     },
-    image: "/images/gallery/gallery-balat-pre-wedding-1.svg",
+    image: "/images/services/service-pre-wedding.jpg",
     imageAlt: {
       en: "Couple in formal attire among the colorful houses of Balat, Istanbul",
       fa: "زوجی با لباس فرمال در میان خانه‌های رنگی بالات استانبول",
