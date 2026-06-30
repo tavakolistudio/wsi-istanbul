@@ -252,7 +252,7 @@ export const pages = {
         tr: "Biz sadece düğün fotoğrafı çekmiyoruz; anıları yönetiyoruz.",
       },
       author: "ISO Wedding — by Tavakoli Studio",
-      image: "/images/locations/rooftop-luxury-yacht/rooftop-luxury-yacht-03.jpg",
+      image: "/images/new01.png",
     },
     packages: {
       eyebrow: { en: "Packages", fa: "پکیج‌ها", tr: "Paketler" },
