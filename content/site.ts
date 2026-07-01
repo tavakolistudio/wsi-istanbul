@@ -327,7 +327,7 @@ export const pages = {
             fa: "پرتره‌های شیک عروسی در کنار آب، با خط آسمان استانبول در پس‌زمینه.",
             tr: "Suyun kenarında zarif düğün portreleri, arka planda İstanbul'un silüeti.",
           },
-          image: "/images/portfolio/portfolio-10.jpg",
+          image: "/images/locations/bosphorus/bosphorus-04.jpg",
         },
         {
           id: "galata-couple-session",
