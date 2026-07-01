@@ -337,7 +337,7 @@ export const pages = {
             fa: "روایتی شیک و شهری از عشق، در گالاتا، کاراکوی و کوچه‌های قدیمی استانبول.",
             tr: "Galata, Karaköy ve eski İstanbul sokaklarında zarif bir şehir aşkı hikâyesi.",
           },
-          image: "/images/portfolio/portfolio-07.jpg",
+          image: "/images/locations/galata/galata-01.jpg",
         },
         {
           id: "formality-old-istanbul",
