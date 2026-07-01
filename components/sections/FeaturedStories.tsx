@@ -27,7 +27,7 @@ export function FeaturedStories({ locale }: { locale: Locale }) {
                 <h3 className="font-heading text-2xl text-charcoal sm:text-3xl">{item.title[locale]}</h3>
                 <p className="mt-3 text-base leading-relaxed text-muted">{item.description[locale]}</p>
               </div>
-              <div className="relative mt-8 aspect-[16/10] w-full overflow-hidden rounded-2xl shadow-md">
+              <div className="relative mx-auto mt-8 aspect-[16/10] w-full max-w-2xl overflow-hidden rounded-2xl shadow-md">
                 <Image
                   src={item.image}
                   alt={item.title[locale]}

@@ -337,7 +337,7 @@ export const pages = {
             fa: "روایتی شیک و شهری از عشق، در گالاتا، کاراکوی و کوچه‌های قدیمی استانبول.",
             tr: "Galata, Karaköy ve eski İstanbul sokaklarında zarif bir şehir aşkı hikâyesi.",
           },
-          image: "/images/portfolio/portfolio-08.jpg",
+          image: "/images/portfolio/portfolio-07.jpg",
         },
         {
           id: "formality-old-istanbul",
@@ -347,7 +347,7 @@ export const pages = {
             fa: "تصاویر سینمایی فرمالیته، شکل‌گرفته با معماری، حرکت و نور طبیعی.",
             tr: "Mimari, hareket ve doğal ışıkla şekillenen sinematik dış çekim görselleri.",
           },
-          image: "/images/portfolio/portfolio-07.jpg",
+          image: "/images/portfolio/portfolio-08.jpg",
         },
       ],
     },
